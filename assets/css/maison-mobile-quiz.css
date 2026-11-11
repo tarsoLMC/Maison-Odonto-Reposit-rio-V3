@@ -33,7 +33,7 @@
  .mobile-care-progress-track{height:4px;border-radius:20px;background:#d4e0df;overflow:hidden;margin-bottom:27px}
  .mobile-care-progress-fill{display:block;width:50%;height:100%;border-radius:20px;background:linear-gradient(90deg,#526e77,#96b3ac);transition:width .24s ease}
  .mobile-care-wizard[data-step="2"] .mobile-care-progress-fill{width:100%}
- .mobile-care-step[hidden]{display:none!important}
+ .mobile-care-wizard [hidden]{display:none!important}
  .mobile-care-title{font-size:clamp(30px,8.5vw,41px);font-weight:690;line-height:1.12;letter-spacing:-.058em;color:#1d343f;margin:0 0 14px}
  .mobile-care-title em{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.035em;color:#527078}
  .mobile-care-support{font-size:15.5px;line-height:1.7;color:#536b74;margin:0 0 24px;max-width:46ch}
