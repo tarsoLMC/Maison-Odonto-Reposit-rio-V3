@@ -37,6 +37,8 @@ jobs:
         run: python3 scripts/check-desktop-v14.py
       - name: Verificar Concierge Desktop V15
         run: python3 scripts/check-desktop-v15.py
+      - name: Verificar fatos, fontes e experiencia desktop V16
+        run: python3 scripts/check-v16.py
       - name: Confirmar que o gerador reproduz o HTML publicado
         run: git diff --exit-code -- *.html
       - name: Verificar sintaxe do JavaScript

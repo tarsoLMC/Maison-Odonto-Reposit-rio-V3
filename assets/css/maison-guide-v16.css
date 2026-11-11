@@ -1,0 +1,73 @@
+/* Maison V16 — orientação concreta após abrir um tratamento.
+   Só aparece no desktop. Conteúdo permanece no HTML, sem depender de JS. */
+.desktop-treatment-guide{display:none}
+@media(min-width:921px){
+  .desktop-treatment-guide{
+    display:block;position:relative;isolation:isolate;
+    padding:clamp(34px,4.5vw,65px) 0 clamp(31px,3.9vw,52px);
+    background:radial-gradient(circle at 100% 0%,#cfe1dd77,transparent 37%),linear-gradient(160deg,#f7f8f6,#eef3f0);
+    border-bottom:1px solid #d0ded9;
+  }
+  .desktop-treatment-guide .treatment-guide-intro{
+    display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:26px;
+  }
+  .treatment-guide-intro h2{
+    max-width:700px;font-size:clamp(31px,3.15vw,45px);line-height:1.14;
+    letter-spacing:-.052em;font-weight:680;color:#253e47;margin:9px 0 12px;
+    text-wrap:balance;
+  }
+  .treatment-guide-intro p{font-size:15px;line-height:1.7;color:#526b73;max-width:62ch;margin:0}
+  .treatment-guide-eyebrow{display:inline-block;font-size:11px;letter-spacing:.14em;color:#567980;font-weight:700}
+  .treatment-guide-source{
+    flex:none;display:flex;align-items:center;gap:7px;max-width:220px;
+    padding-bottom:6px;font-size:11px;line-height:1.5;color:#587078;
+    text-decoration:underline;text-underline-offset:4px;
+  }
+  .treatment-guide-source .icon{width:17px;height:17px;flex:none}
+  .treatment-guide-facts{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+  }
+  .treatment-guide-fact{
+    display:flex;flex-direction:column;gap:11px;min-width:0;
+    border:1px solid #d5e2de;border-radius:17px;
+    padding:clamp(17px,2.1vw,28px);background:#fff;
+    box-shadow:0 8px 22px #243b4010;
+  }
+  .treatment-guide-fact-label{font-size:10.5px;letter-spacing:.13em;font-weight:720;color:#54747a}
+  .treatment-guide-fact h3{font-size:clamp(18px,1.72vw,23px);font-weight:680;line-height:1.28;letter-spacing:-.036em;color:#253e48;margin:0}
+  .treatment-guide-fact p{font-size:14px;line-height:1.72;color:#506770;margin:0}
+  .treatment-guide-bottom{
+    display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+    align-items:center;gap:22px;margin-top:14px;
+    padding:19px 22px;border:1px solid #d6e3df;border-radius:15px;background:#ffffffb7;
+  }
+  .treatment-guide-question strong{font-size:12px;color:#56747c;letter-spacing:.09em;font-weight:760}
+  .treatment-guide-question p{font-size:14px;line-height:1.58;margin:7px 0 0;color:#273f49;font-weight:610}
+  .treatment-guide-actions{display:flex;gap:11px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+  .treatment-guide-actions .btn{min-height:47px;padding:12px 18px;font-size:12.5px;white-space:normal}
+  .treatment-guide-links{
+    margin:20px 0 0;display:flex;align-items:center;gap:11px 22px;flex-wrap:wrap;
+  }
+  .treatment-guide-links span{font-size:11px;letter-spacing:.1em;color:#617a80;font-weight:770}
+  .treatment-guide-links>a{display:inline-flex;align-items:center;gap:6px;min-height:41px;font-size:12.5px;font-weight:680;color:#2f5660;text-decoration:underline;text-underline-offset:4px}
+  .treatment-guide-links>a:hover{color:#172f38}
+  .treatment-guide-links>a:focus-visible,.treatment-guide-source:focus-visible{outline:3px solid #688f9b;outline-offset:4px;border-radius:4px}
+  .story-service-page #informacoes-completas,
+  .story-service-page #etapas-tratamento,
+  .story-service-page #duvidas-tratamento,
+  .story-service-page #opcoes-relacionadas{scroll-margin-top:110px}
+}
+@media(min-width:921px) and (max-width:1120px){
+  .treatment-guide-facts{gap:9px}
+  .treatment-guide-fact{padding:17px}
+  .treatment-guide-fact p{font-size:13px;line-height:1.63}
+  .treatment-guide-bottom{grid-template-columns:1fr;gap:15px}
+  .treatment-guide-actions{justify-content:flex-start}
+}
+@media(max-width:920px){
+  .desktop-treatment-guide{display:none!important}
+}
+@media print{
+  .desktop-treatment-guide{display:block}
+  .treatment-guide-source{max-width:none}
+}

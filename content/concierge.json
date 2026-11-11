@@ -1,9 +1,9 @@
 {
   "intro": {
     "eyebrow": "A MAISON COMEÇA POR VOCÊ",
-    "heading": "Qual cuidado você procura?",
-    "support": "Escolha uma área para conhecer os tratamentos e decidir o próximo passo com mais informação.",
-    "fallback": "A indicação do tratamento depende de avaliação profissional."
+    "heading": "Que cuidado você quer entender melhor?",
+    "support": "Escolha uma área para descobrir o que cada tratamento faz, como é avaliado e quais limites vale conhecer.",
+    "fallback": "Estas informações orientam a conversa. A indicação depende de avaliação odontológica."
   },
   "categories": [
     {
@@ -12,8 +12,8 @@
       "choice_title": "Reabilitação",
       "choice_subtitle": "Implantes e próteses",
       "panel_kicker": "01 / REABILITAÇÃO ORAL",
-      "headline": "Repor dentes começa com um bom planejamento.",
-      "description": "Implantes e próteses são possibilidades diferentes para substituir dentes perdidos. Conheça como cada tratamento é avaliado e converse com a equipe sobre seu caso.",
+      "headline": "Implante substitui a raiz; prótese repõe o dente.",
+      "description": "O implante fica no osso e pode sustentar uma coroa ou prótese. Outras próteses podem ser fixas ou removíveis, com ou sem implantes. Entenda as diferenças antes da avaliação.",
       "image": "tratamento-protese.webp",
       "image_alt": "Prótese dentária em imagem ilustrativa",
       "treatments": [
@@ -28,8 +28,8 @@
       "choice_title": "Alinhamento",
       "choice_subtitle": "Invisalign®",
       "panel_kicker": "02 / ALINHAMENTO DENTÁRIO",
-      "headline": "Um caminho discreto para cuidar do alinhamento.",
-      "description": "Alinhadores transparentes podem ser uma alternativa ortodôntica. A avaliação profissional considera a posição dos dentes, a saúde bucal e as possibilidades de tratamento.",
+      "headline": "Alinhadores transparentes exigem participação diária.",
+      "description": "O Invisalign® movimenta os dentes por uma sequência de placas removíveis. O uso costuma exigir cerca de 22 horas por dia, consultas de acompanhamento e, depois, contenção.",
       "image": "tratamento-invisalign.webp",
       "image_alt": "Alinhador transparente em imagem ilustrativa",
       "treatments": [
@@ -43,8 +43,8 @@
       "choice_title": "Estética do sorriso",
       "choice_subtitle": "Lentes e clareamento",
       "panel_kicker": "03 / ESTÉTICA DENTAL",
-      "headline": "Estética que respeita a individualidade do seu sorriso.",
-      "description": "Lentes de contato dentais e clareamento atendem objetivos diferentes. Conheça as possibilidades, os cuidados e as limitações antes de decidir junto ao profissional.",
+      "headline": "Clarear a cor ou mudar a forma? São escolhas diferentes.",
+      "description": "O clareamento atua em dentes naturais, não na cor de coroas e facetas. Lentes modificam forma e aparência, mas podem exigir desgaste irreversível de esmalte.",
       "image": "tratamento-lentes.webp",
       "image_alt": "Lentes de contato dentais em imagem ilustrativa",
       "treatments": [
@@ -59,8 +59,8 @@
       "choice_title": "Outros cuidados e harmonização facial",
       "choice_subtitle": "Cirurgia e harmonização",
       "panel_kicker": "04 / OUTROS CUIDADOS E HARMONIZAÇÃO FACIAL",
-      "headline": "Outros cuidados e harmonização facial.",
-      "description": "Cirurgia dentária e harmonização facial envolvem indicações e planejamentos distintos. Entenda o atendimento e converse com a equipe sobre uma avaliação individual.",
+      "headline": "Cirurgia dentária e harmonização têm finalidades distintas.",
+      "description": "Extrações e outros procedimentos cirúrgicos dependem de avaliação e cuidados de recuperação. Intervenções estéticas faciais exigem análise da anatomia e explicação dos riscos de cada técnica.",
       "image": "tratamento-harmonizacao.webp",
       "image_alt": "Harmonização facial em imagem ilustrativa",
       "treatments": [
@@ -72,6 +72,6 @@
   ],
   "disclaimer": "A escolha do procedimento é feita após avaliação individual.",
   "view_all_label": "Ver todos os sete tratamentos",
-  "catalog_heading": "Todos os tratamentos, com clareza.",
-  "catalog_subheading": "Explore as sete áreas da Maison e aprofunde-se no que deseja conhecer."
+  "catalog_heading": "Veja os sete tratamentos.",
+  "catalog_subheading": "Acesse cada página para conhecer indicações gerais, etapas, limites e cuidados antes da avaliação."
 }

@@ -82,7 +82,7 @@
       "name": "Cirurgia dentária",
       "route": "/especialidades/cirurgia-dentaria.html",
       "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/cirurgia-dentaria.html",
-      "intro": "A cirurgia dentária reúne intervenções na boca, nos dentes e nas gengivas. A indicação depende do problema identificado na avaliação odontológica.",
+      "intro": "A cirurgia dentária inclui extrações e intervenções na boca. A posição do dente, a condição dos tecidos e os exames orientam a necessidade de uma abordagem simples ou cirúrgica.",
       "sections": [
         {
           "heading": "Como funciona",
@@ -90,7 +90,7 @@
         },
         {
           "heading": "Principais benefícios",
-          "text": "Tratar dentes comprometidos quando a remoção é indicada. Atender a necessidades específicas de saúde bucal ou preparar a reabilitação, conforme o procedimento."
+          "text": "Quando a remoção de um dente é necessária, a cirurgia pode resolver o problema identificado ou permitir etapas posteriores de reabilitação. A indicação depende do exame e dos riscos."
         },
         {
           "heading": "O que saber antes da consulta",
@@ -136,7 +136,7 @@
       "name": "Clareamento dentário",
       "route": "/especialidades/clareamento-dentario.html",
       "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/clareamento-dentario.html",
-      "intro": "O clareamento dentário busca reduzir alterações na cor dos dentes. Idade, tabaco e bebidas ou alimentos pigmentados estão entre os fatores que podem influenciar a tonalidade.",
+      "intro": "O clareamento altera a tonalidade de dentes naturais por meio de agentes clareadores. Coroas, lentes e restaurações não clareiam da mesma forma, e pode ocorrer sensibilidade.",
       "sections": [
         {
           "heading": "Como funciona",
@@ -144,7 +144,7 @@
         },
         {
           "heading": "Principais benefícios",
-          "text": "Suavizar manchas e descolorações nos dentes. Escolher, com o dentista, uma modalidade compatível com o caso e com a rotina do paciente."
+          "text": "O tratamento pode reduzir alterações de cor em dentes naturais. O dentista avalia as restaurações existentes e a saúde bucal antes de indicar a modalidade."
         },
         {
           "heading": "O que saber antes da consulta",
@@ -194,7 +194,7 @@
       "name": "Harmonização facial",
       "route": "/especialidades/harmonizacao-facial.html",
       "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/harmonizacao-facial.html",
-      "intro": "A harmonização facial reúne técnicas estéticas voltadas ao equilíbrio das proporções do rosto. O planejamento considera a anatomia, os objetivos e as necessidades de cada pessoa.",
+      "intro": "A harmonização facial pode envolver técnicas com finalidades diferentes, como aplicação de toxina botulínica e preenchimentos. O planejamento exige avaliação da anatomia, das expectativas e dos riscos.",
       "sections": [
         {
           "heading": "Como funciona",
@@ -202,7 +202,7 @@
         },
         {
           "heading": "Principais benefícios",
-          "text": "Trabalhar proporções de regiões específicas do rosto. Planejar as intervenções de acordo com as características e os objetivos do paciente."
+          "text": "Técnicas estéticas podem atuar em objetivos distintos, como movimento muscular ou volume de regiões faciais. Os resultados e riscos variam com o procedimento e o caso."
         },
         {
           "heading": "O que saber antes da consulta",
@@ -248,7 +248,7 @@
       "name": "Implante dentário",
       "route": "/especialidades/implante-dentario.html",
       "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/implante-dentario.html",
-      "intro": "O implante dentário substitui a raiz de um dente perdido. Uma estrutura de titânio é instalada no osso para dar suporte a uma prótese.",
+      "intro": "O implante é uma estrutura instalada no osso para substituir a raiz de um dente ausente e apoiar uma coroa ou outra prótese. A condição óssea e a cicatrização fazem parte da avaliação.",
       "sections": [
         {
           "heading": "Como funciona",
@@ -256,7 +256,7 @@
         },
         {
           "heading": "Principais benefícios",
-          "text": "Dar suporte à reposição de um ou mais dentes. Ajudar a recuperar a mastigação e, conforme o caso, a fala e a aparência do sorriso."
+          "text": "O implante pode apoiar uma coroa, ponte ou prótese para a reposição de dentes. A mastigação e a adaptação dependem da reabilitação planejada e do acompanhamento."
         },
         {
           "heading": "O que saber antes da consulta",
@@ -302,7 +302,7 @@
       "name": "Invisalign®",
       "route": "/especialidades/invisalign.html",
       "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/invisalign.html",
-      "intro": "Invisalign® é um sistema ortodôntico de alinhadores transparentes e removíveis. A avaliação identifica se eles são adequados para corrigir a posição dos dentes e tratar alterações da mordida.",
+      "intro": "O Invisalign® utiliza uma sequência de alinhadores transparentes e removíveis para movimentar os dentes. A eficácia depende da indicação ortodôntica, do tempo diário de uso e do acompanhamento.",
       "sections": [
         {
           "heading": "Como funciona",
@@ -310,7 +310,7 @@
         },
         {
           "heading": "Principais benefícios",
-          "text": "Alinhadores transparentes e discretos. Possibilidade de retirar os alinhadores para comer e fazer a higiene bucal."
+          "text": "As placas são transparentes e removíveis para refeições e higiene. O tratamento exige tempo de uso diário e pode ser seguido de contenção para manter o alinhamento."
         },
         {
           "heading": "O que saber antes da consulta",
@@ -356,7 +356,7 @@
       "name": "Prótese dentária",
       "route": "/especialidades/protese-dentaria.html",
       "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/protese-dentaria.html",
-      "intro": "A prótese dentária pode repor dentes ausentes ou restaurar dentes danificados. A escolha entre opções fixas e removíveis depende das condições da boca e dos objetivos do tratamento.",
+      "intro": "Próteses podem substituir dentes ausentes ou recuperar dentes danificados. Há opções fixas e removíveis; a escolha considera os dentes de apoio, a gengiva, a mordida e a rotina de higiene.",
       "sections": [
         {
           "heading": "Como funciona",
@@ -364,7 +364,7 @@
         },
         {
           "heading": "Principais benefícios",
-          "text": "Ajudar a recuperar a mastigação e a fala, conforme o caso. Restabelecer a aparência do sorriso após a perda ou o dano a dentes."
+          "text": "As opções incluem coroas, pontes e próteses removíveis, conforme a quantidade de dentes e as condições de apoio. A adaptação e a manutenção fazem parte da reabilitação."
         },
         {
           "heading": "O que saber antes da consulta",
@@ -410,7 +410,7 @@
       "name": "Lentes de contato dentais",
       "route": null,
       "url": null,
-      "intro": "Lentes de contato dentais são lâminas finas aplicadas à parte da frente dos dentes. O planejamento estético avalia cor, formato e proporções, preservando as características do seu sorriso.",
+      "intro": "Lentes dentais são lâminas aplicadas à face visível de dentes selecionados para modificar forma, cor ou proporção. O planejamento avalia alternativas e se será necessário remover esmalte, o que pode ser irreversível.",
       "sections": [
         {
           "heading": "O que pode ser trabalhado",
