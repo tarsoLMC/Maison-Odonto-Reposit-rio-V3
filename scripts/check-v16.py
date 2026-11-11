@@ -48,7 +48,7 @@ class Inspect(HTMLParser):
   if tag=='meta' and a.get('name')=='description':self.description=a.get('content')
   if tag=='meta' and a.get('property')=='og:description':self.og_description=a.get('content')
   if 'desktop-treatment-guide' in a.get('class',''):self.guide+=1
-  if 'treatment-guide-fact' in a.get('class',''):self.fact+=1
+  if 'treatment-guide-fact' in a.get('class','').split():self.fact+=1
 
 for g in source['guides']:
  ident=g['id'];path=ROOT/files[ident]
