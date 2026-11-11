@@ -1,0 +1,35 @@
+/* Maison V8: areas de tratamento, tipografia, mobile e estados de foco. */
+:root{--maison-ink:#213646;--maison-ink-soft:#536576;--maison-line:#d6dfe4}
+[id]{scroll-margin-top:120px}
+:where(a,button,summary):focus-visible{outline:3px solid #9bbdd1;outline-offset:4px}
+.care-paths{padding:clamp(20px,3vw,38px);margin:0 0 36px;border:1px solid #cbd8dc;border-radius:24px;background:radial-gradient(circle at 100% 0%,#dbe6ef7a,transparent 42%),linear-gradient(142deg,#fdfdfb,#edf2f2);box-shadow:0 17px 46px #1730450c}
+.care-paths-heading{display:grid;grid-template-columns:1fr minmax(240px,.7fr);align-items:end;gap:26px;margin-bottom:25px}
+.care-paths-heading .eyebrow{color:#526b77;margin-bottom:13px}
+.care-paths-heading h3{font-size:clamp(30px,3vw,43px);letter-spacing:-.05em;line-height:1.12;color:var(--maison-ink);margin:0}
+.care-paths-heading p{font-size:16px;line-height:1.7;max-width:43ch;margin:0;color:var(--maison-ink-soft)}
+.care-paths-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.care-path{display:flex;flex-direction:column;min-width:0;padding:23px 18px 19px;gap:5px;background:#fff;border:1px solid var(--maison-line);border-radius:16px;box-shadow:0 8px 24px #19374a0b}
+.care-path-number{font-size:10px;line-height:1.4;font-weight:700;letter-spacing:.105em;color:#617a87}
+.care-path h4{font-size:18px;line-height:1.27;letter-spacing:-.035em;color:#263d4d;margin:12px 0 16px;min-height:46px}
+.care-path>a{display:flex;align-items:center;justify-content:space-between;gap:9px;min-height:46px;padding:9px 0;border-top:1px solid #e0e8e9;color:#27495b;text-decoration:none;font-size:13.5px;font-weight:600;line-height:1.45}
+.care-path>a:hover{color:#0b5265}.care-path>a .icon{width:17px;height:17px;flex:none;opacity:.65}
+.care-paths-contact{display:flex;justify-content:space-between;align-items:center;gap:18px;border-top:1px solid #cfdbdd;margin-top:25px;padding-top:22px}
+.care-paths-contact>span{font-size:15px;line-height:1.6;color:var(--maison-ink-soft)}.care-paths-contact .btn{flex:none;min-height:48px;font-size:13px}
+.treatments .service-card:target{border:2px solid #64879a;box-shadow:0 0 0 4px #9db8c540,0 16px 30px #18324518}
+.treatments .service-card>a{min-height:100%}.treatments .service-card-content p{color:#536576}.treatments .service-card .micro-label{font-size:10px}.treatments .service-card .card-link{font-size:12.5px}
+.page-hero-copy>.page-hero-tagline{font-family:Georgia,'Times New Roman',serif;font-size:clamp(20px,2.1vw,29px);font-style:italic;line-height:1.32;color:#edf3f7;letter-spacing:-.02em;margin:-5px 0 17px}
+.inner-page .page-hero h1{max-width:760px;overflow-wrap:break-word}.inner-page .page-hero-copy>p:not(.page-hero-tagline){font-size:16px;line-height:1.67}
+.service-detail-content p,.journey-grid p,.faq-list details p{font-size:16px;line-height:1.72}.service-aside p{font-size:15px;line-height:1.65}.service-aside .btn{min-height:48px;font-size:13px}
+.related-treatments{padding:65px 0;background:linear-gradient(150deg,#edf2f2,#fdfdfb);border-block:1px solid #dae2e4}
+.related-treatments>.container{display:grid;grid-template-columns:minmax(230px,.9fr) minmax(0,1.3fr);gap:48px;align-items:center}
+.related-heading .eyebrow{margin-bottom:13px;color:#587380}.related-heading h2{font-size:clamp(27px,3vw,42px);line-height:1.16;letter-spacing:-.05em;color:#233b4a;margin:0 0 13px}.related-heading p{font-size:15px;line-height:1.7;max-width:46ch;color:#516677;margin:0}
+.related-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.related-links>a{display:flex;flex-direction:column;gap:10px;min-width:0;padding:22px 20px;border:1px solid #d1dee3;border-radius:16px;background:#fff;box-shadow:0 9px 24px #1b344015;color:#263d4f;text-decoration:none;transition:transform .18s,border-color .18s}
+.related-links>a:hover{transform:translateY(-2px);border-color:#95b2bb}
+.related-links>a>span{font-size:10px;letter-spacing:.085em;text-transform:uppercase;font-weight:700;color:#65808c}
+.related-links>a>strong{font-size:18px;line-height:1.2;letter-spacing:-.03em;font-weight:650}.related-links>a .icon{width:20px;height:20px;margin-left:auto}
+.mobile-contact{padding-bottom:max(10px,env(safe-area-inset-bottom,10px))}.mobile-contact>a{min-height:48px}
+@media(max-width:1050px){.care-paths-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.care-path h4{min-height:0}.related-treatments>.container{gap:28px}}
+@media(max-width:720px){[id]{scroll-margin-top:98px}.care-paths{padding:21px 16px;border-radius:18px;margin-bottom:24px}.care-paths-heading{grid-template-columns:1fr;gap:10px;margin-bottom:19px}.care-paths-heading h3{font-size:29px}.care-paths-heading p{font-size:15px;line-height:1.6}.care-paths-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.care-path{padding:17px 12px 12px;border-radius:12px}.care-path-number{font-size:9px;letter-spacing:.05em}.care-path h4{font-size:16px;line-height:1.22;margin:9px 0 10px;min-height:57px}.care-path>a{font-size:13px;line-height:1.35;min-height:48px;gap:5px}.care-path>a .icon{width:15px;height:15px}.care-paths-contact{display:grid;gap:12px;margin-top:18px;padding-top:18px}.care-paths-contact>span{font-size:14px;line-height:1.6}.care-paths-contact .btn{justify-content:space-between;width:100%;min-height:48px}.treatments .service-card .card-link{font-size:12px}.page-hero-copy>.page-hero-tagline{font-size:21px;margin:-4px 0 12px}.inner-page .page-hero h1{font-size:clamp(33px,8vw,44px);line-height:1.11}.inner-page .page-hero-copy>p:not(.page-hero-tagline){font-size:16px;line-height:1.65}.service-detail-content p,.journey-grid p,.faq-list details p{font-size:16px;line-height:1.72}.service-aside p{font-size:15px}.related-treatments{padding:48px 0}.related-treatments>.container{display:block}.related-heading h2{font-size:29px}.related-heading p{font-size:15px;margin-bottom:20px}.related-links>a{padding:18px 14px}.related-links>a>strong{font-size:16px}}
+@media(max-width:360px){.care-paths-grid{grid-template-columns:1fr}.care-path h4{min-height:0}.care-path{padding:15px 17px 10px}.related-links{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.related-links>a{transition:none}.related-links>a:hover{transform:none}}
