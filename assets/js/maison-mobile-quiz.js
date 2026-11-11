@@ -22,11 +22,30 @@
   const openingIntro = intro.textContent;
   const labels = new Map(options.map(button => [button.dataset.chooseCare, button.dataset.careTitle]));
   let lastButton = null;
+  const validCategories = new Set([...labels.keys(), 'todos']);
+
+  // A escolha fica apenas no estado da entrada atual do histórico do navegador.
+  // Não há cookies, sessionStorage, requisições ou cadastro.
+  function remember(category) {
+    try {
+      if (!window.history || typeof window.history.replaceState !== 'function') return;
+      const previous = window.history.state;
+      const state = previous && typeof previous === 'object' ? previous : {};
+      window.history.replaceState({...state, maisonCare: category}, '');
+    } catch (_) { /* histórico indisponível: a navegação continua funcionando */ }
+  }
+
+  function restore() {
+    try {
+      const saved = window.history?.state?.maisonCare;
+      return validCategories.has(saved) ? saved : null;
+    } catch (_) { return null; }
+  }
 
   function refreshResponsive() {
     document.body.classList.toggle('mobile-care-active', media.matches);
   }
-  function showStep(step, category) {
+  function showStep(step, category, restoring = false) {
     const detail = step === 2;
     root.dataset.step = String(step);
     first.hidden = detail;
@@ -48,8 +67,11 @@
       services.forEach(link => link.hidden = false);
       all.hidden = false;
     }
-    if (media.matches) root.scrollIntoView({ block: 'start', behavior: 'auto' });
-    title.focus({ preventScroll: true });
+    if (!restoring) {
+      remember(detail ? category : null);
+      if (media.matches) root.scrollIntoView({ block: 'start', behavior: 'auto' });
+      title.focus({ preventScroll: true });
+    }
   }
 
   options.forEach(button => {
@@ -64,8 +86,10 @@
   });
   all.addEventListener('click', () => showStep(2, 'todos'));
 
-  // Não salva escolhas, não transmite dados clínicos e não exige formulário.
+  // O retorno do navegador restaura o passo sem novo scroll ou foco forçado.
   refreshResponsive();
+  const previousCategory = restore();
+  if (previousCategory) showStep(2, previousCategory, true);
   if (typeof media.addEventListener === 'function') media.addEventListener('change', refreshResponsive);
   else if (typeof media.addListener === 'function') media.addListener(refreshResponsive);
 })();

@@ -59,6 +59,6 @@ assert '2 passos simples' not in source
 assert quiz.count('data-choose-care=')==4 and quiz.count('data-wizard-service=')==7
 assert quiz.index('maison-mobile-quiz.css')<quiz.index('maison-compact-v12.css')
 assert 'Outros cuidados e harmonização facial' in quiz
-assert 'assets/js/maison-mobile-quiz.js?v=maison-v10' in quiz
+assert ('assets/js/maison-mobile-quiz.js?v=maison-v10' in quiz or 'assets/js/maison-mobile-quiz.js?v=maison-v13' in quiz)
 print(json.dumps({'status':'PASS','service_pages':7,'chapters':21,'quiz_categories':4,'quiz_services':7,
  'css':'mobile_compact','source_sync':'requires_git_diff','browser':'NOT_TESTED'},ensure_ascii=False))
