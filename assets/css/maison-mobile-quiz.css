@@ -59,7 +59,7 @@
  .mobile-care-option-copy strong,.mobile-care-service-copy strong{font-size:16px;font-weight:690;letter-spacing:-.025em;line-height:1.35}
  .mobile-care-option-copy small,.mobile-care-service-copy small{font-size:12.5px;line-height:1.48;color:#6a7c84}
  .mobile-care-arrow{flex:0 0 17px;width:17px;height:17px;stroke:#76909a;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
- .mobile-care-back{display:inline-flex;align-items:center;gap:7px;padding:10px 2px;border:0;background:transparent;font:600 14px inherit;color:#4b6c75;cursor:pointer;margin:-1px 0 20px}
+ .mobile-care-back{display:inline-flex;align-items:center;gap:7px;padding:10px 2px;border:0;background:transparent;font-family:inherit;font-size:14px;font-weight:600;color:#4b6c75;cursor:pointer;margin:-1px 0 20px}
  .mobile-care-back svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
  .mobile-care-kicker{font-size:11px;font-weight:730;color:#5c7880;letter-spacing:.13em;text-transform:uppercase;margin:0 0 12px}
  .mobile-care-service{min-height:91px;background:#fff}
