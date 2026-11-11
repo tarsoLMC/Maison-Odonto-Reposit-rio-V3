@@ -1,0 +1,19 @@
+# Credenciais e configurações privadas — nunca versionar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+credentials.json
+secrets.json
+*.secret
+*.log
+# Temporários locais
+.DS_Store
+Thumbs.db
+__pycache__/
+node_modules/
+.cache/
+*.zip
+*.tar.gz
