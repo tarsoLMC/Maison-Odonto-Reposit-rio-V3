@@ -75,6 +75,24 @@ def service_card(s,i):
 CONCIERGE=json.loads((ROOT/'content/concierge.json').read_text(encoding='utf-8'))
 def mobile_quiz():
  return (ROOT/'content/mobile-quiz.html').read_text(encoding='utf-8')
+def concierge_deep_dive(g):
+ pair=next((p for p in COMPARE['pairs'] if p['id']==g['id']),None)
+ if pair:
+  cards=[]
+  for treatment in pair['services']:
+   item=next(x for x in services if x['id']==treatment['id'])
+   cards.append(f'''<article class="concierge-compare-card"><strong>{esc(treatment['title'])}</strong><p>{esc(treatment['summary'])}</p><p>{esc(treatment['detail'])}</p><a href="{item['slug']}.html">Ler sobre este tratamento {icon('arrow')}</a></article>''')
+  return f'''<details class="concierge-deep-dive" data-desktop-deep-dive><summary>Compare as possibilidades {icon('chevron')}</summary><p class="concierge-deep-dive-intro">{esc(pair['intro'])}</p><div class="concierge-compare-rows">{''.join(cards)}</div><p class="concierge-compare-note">{esc(COMPARE['disclaimer'])}</p></details>'''
+ selected=next((x for x in services if x['id'] in g['treatments'] and x.get('faqs')),None)
+ if not selected:return ''
+ question=selected['faqs'][0]
+ return f'''<details class="concierge-deep-dive" data-desktop-deep-dive><summary>Uma dúvida comum {icon('chevron')}</summary><p class="concierge-deep-dive-question">{esc(question['question'])}</p><p class="concierge-deep-dive-answer">{esc(question['answer'])}</p></details>'''
+
+def concierge_first_visit():
+ steps=[('01','Explore com calma'),('02','Converse com a equipe'),('03','Conheça as possibilidades na avaliação')]
+ items=''.join(f'<li><b>{number}</b><span>{esc(title)}</span></li>' for number,title in steps)
+ return f'''<aside class="concierge-first-visit" aria-labelledby="concierge-first-title"><div><h4 id="concierge-first-title">Sem pressa. No seu tempo.</h4><p>Você não precisa decidir sozinho. Conheça os cuidados e tire suas dúvidas antes de agendar.</p></div><ol>{items}</ol></aside>'''
+
 def treatment_chooser():
  tabs=[]
  panels=[]
@@ -83,8 +101,8 @@ def treatment_chooser():
   ident=g['id']
   tabs.append(f'''<a class="concierge-choice" href="#concierge-{ident}" data-concierge-tab="{ident}"><span class="concierge-choice-top"><span class="concierge-choice-number">{esc(g['number'])} / 04</span><span class="concierge-choice-indicator" aria-hidden="true">{icon('arrow')}</span></span><strong>{esc(g['choice_title'])}</strong><small>{esc(g['choice_subtitle'])}</small></a>''')
   related=''.join(f'<a href="{x["slug"]}.html">{esc(x["name"])} {icon("arrow")}</a>' for x in services if x['id'] in g['treatments'])
-  panels.append(f'''<section class="concierge-panel" id="concierge-{ident}" data-concierge-panel="{ident}" aria-labelledby="concierge-heading-{ident}"><div class="concierge-panel-media">{image(g['image'],g['image_alt'])}<span class="concierge-panel-photo-label">Imagem ilustrativa</span></div><div class="concierge-panel-content"><span class="concierge-panel-kicker">{esc(g['panel_kicker'])}</span><h4 id="concierge-heading-{ident}">{esc(g['headline'])}</h4><p class="concierge-panel-summary">{esc(g['description'])}</p><div class="concierge-panel-services">{related}</div><div class="concierge-panel-footer">{cta('Agendar avaliação',g['whatsapp_message'])}<span class="concierge-panel-note">{esc(CONCIERGE['disclaimer'])}</span></div></div></section>''')
- return f'''<section class="maison-concierge" data-maison-concierge aria-labelledby="concierge-title"><div class="concierge-intro"><div class="concierge-intro-main">{eyebrow(CONCIERGE['intro']['eyebrow'])}<h3 id="concierge-title">{esc(CONCIERGE['intro']['heading'])}</h3><p>{esc(CONCIERGE['intro']['support'])}</p></div><div class="concierge-step" aria-label="Quatro áreas para explorar"><strong data-concierge-counter>01</strong><span>/ 04</span></div></div><div class="concierge-choices" data-concierge-list aria-label="Áreas de tratamento">{''.join(tabs)}</div><div class="concierge-panels">{''.join(panels)}</div><div class="concierge-bottom"><span>{esc(CONCIERGE['intro']['fallback'])}</span><a href="#todos-tratamentos">{esc(CONCIERGE['view_all_label'])} {icon('arrow')}</a></div></section>'''
+  panels.append(f'''<section class="concierge-panel" id="concierge-{ident}" data-concierge-panel="{ident}" aria-labelledby="concierge-heading-{ident}"><div class="concierge-panel-media">{image(g['image'],g['image_alt'])}<span class="concierge-panel-photo-label">Imagem ilustrativa</span></div><div class="concierge-panel-content"><span class="concierge-panel-kicker">{esc(g['panel_kicker'])}</span><h4 id="concierge-heading-{ident}">{esc(g['headline'])}</h4><p class="concierge-panel-summary">{esc(g['description'])}</p><div class="concierge-panel-services">{related}</div><div class="concierge-panel-footer">{cta('Agendar avaliação',g['whatsapp_message'])}<span class="concierge-panel-note">{esc(CONCIERGE['disclaimer'])}</span></div>{concierge_deep_dive(g)}</div></section>''')
+ return f'''<section class="maison-concierge" data-maison-concierge aria-labelledby="concierge-title"><div class="concierge-intro"><div class="concierge-intro-main">{eyebrow(CONCIERGE['intro']['eyebrow'])}<h3 id="concierge-title">{esc(CONCIERGE['intro']['heading'])}</h3><p>{esc(CONCIERGE['intro']['support'])}</p></div><div class="concierge-step" aria-label="Quatro áreas para explorar"><strong data-concierge-counter>01</strong><span>/ 04</span></div></div><div class="concierge-choices" data-concierge-list aria-label="Áreas de tratamento">{''.join(tabs)}</div><div class="concierge-panels">{''.join(panels)}</div><div class="concierge-bottom"><span>{esc(CONCIERGE['intro']['fallback'])}</span><a href="#todos-tratamentos">{esc(CONCIERGE['view_all_label'])} {icon('arrow')}</a></div>{concierge_first_visit()}</section>'''
 def consultation_card():
  return f'''<article class="service-card service-card-consult"><div class="service-consult-inner"><span class="micro-label">ATENDIMENTO INDIVIDUALIZADO</span><span class="service-consult-symbol" aria-hidden="true">+</span><h3>Ainda tem dúvidas sobre qual tratamento procurar?</h3><p>Converse com a equipe da Maison e saiba como agendar sua avaliação. A escolha do tratamento é feita após análise profissional.</p>{cta('Conversar pelo WhatsApp','Olá, Maison! Gostaria de orientação para agendar uma avaliação odontológica.')}</div></article>'''
 def concierge_catalog_heading():
@@ -144,7 +162,7 @@ def write_page(path,title,description,content,home=False):
  hours=[{'@type':'OpeningHoursSpecification','dayOfWeek':D['hours']['days'],'opens':a,'closes':b} for a,b in D['hours']['intervals']]
  schema={'@context':'https://schema.org','@graph':[{'@type':'Dentist','@id':BASE+'/#maison','name':D['identity']['brand'],'legalName':D['identity']['legal_name'],'taxID':D['identity']['cnpj'],'url':BASE+'/','telephone':CONTACT['phone_number'],'email':CONTACT['email'],'image':BASE+'/assets/img/clinica.webp','address':{'@type':'PostalAddress','streetAddress':'SGAS 915, lote 69/70, sala 41, 2º subsolo, Centro Clínico Advance','addressLocality':'Brasília','addressRegion':'DF','postalCode':'70390-150','addressCountry':'BR'},'openingHoursSpecification':hours,'sameAs':[INST]}]}
  if not home:schema['@graph'].append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Início','item':BASE+'/'},{'@type':'ListItem','position':2,'name':title.split('|')[0].strip(),'item':BASE+'/'+path}]})
- extra_css='<link rel="stylesheet" href="assets/css/maison-v9.css?v=maison-v9"><link rel="stylesheet" href="assets/css/maison-mobile-quiz.css?v=maison-v10"><link rel="stylesheet" href="assets/css/maison-compact-v12.css?v=maison-v12">' if path=='especialidades.html' else ''
+ extra_css='<link rel="stylesheet" href="assets/css/maison-v9.css?v=maison-v9"><link rel="stylesheet" href="assets/css/maison-mobile-quiz.css?v=maison-v10"><link rel="stylesheet" href="assets/css/maison-compact-v12.css?v=maison-v12"><link rel="stylesheet" href="assets/css/maison-desktop-v15.css?v=maison-v15">' if path=='especialidades.html' else ''
  if home:extra_css='<link rel="stylesheet" href="assets/css/maison-desktop-v14.css?v=maison-v14">'
  is_story=path in [x['slug']+'.html' for x in services]
  if is_story:extra_css='<link rel="stylesheet" href="assets/css/maison-story-v11.css?v=maison-v11"><link rel="stylesheet" href="assets/css/maison-compact-v12.css?v=maison-v12"><link rel="stylesheet" href="assets/css/maison-v13.css?v=maison-v13">'
