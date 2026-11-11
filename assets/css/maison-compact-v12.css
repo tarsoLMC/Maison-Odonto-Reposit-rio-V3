@@ -1,0 +1,76 @@
+/* Maison V12 — quiet minimalism: menos blocos, ritmo compacto e alvos confortáveis.
+   Mantém conteúdo e funcionalidades sem depender de animações. */
+@media (max-width:720px){
+  /* Tratamentos — escolha guiada */
+  .mobile-care-wizard{background:#f5f7f5;padding:16px clamp(16px,4.7vw,24px) calc(105px + env(safe-area-inset-bottom,0px))}
+  .mobile-care-wizard::before{display:none}
+  .mobile-care-progress-top{margin:11px 0 9px}
+  .mobile-care-progress-track{height:3px;margin-bottom:20px;background:#d7e2df}
+  .mobile-care-progress-fill{background:#577c82}
+  .mobile-care-title{font-size:clamp(29px,7.6vw,36px);line-height:1.1;margin-bottom:10px;letter-spacing:-.052em}
+  .mobile-care-support{font-size:15.5px;line-height:1.58;margin-bottom:19px}
+  .mobile-care-choices,.mobile-care-service-list{gap:9px}
+  .mobile-care-option,.mobile-care-service{
+    min-height:72px;gap:12px;padding:12px 13px;
+    border-radius:13px;border-color:#d6e0de;
+    box-shadow:0 3px 14px #2442490a;
+    background:#fdfefd;
+  }
+  .mobile-care-option:hover,.mobile-care-service:hover{box-shadow:0 6px 17px #24424915}
+  .mobile-care-symbol{flex-basis:40px;width:40px;height:40px;border-radius:11px;background:#e9efed;border-color:#dbe6e2}
+  .mobile-care-symbol svg{width:22px;height:22px}
+  .mobile-care-option-copy,.mobile-care-service-copy{gap:2px}
+  .mobile-care-option-copy strong,.mobile-care-service-copy strong{font-size:15.5px;line-height:1.32}
+  .mobile-care-option-copy small,.mobile-care-service-copy small{font-size:12.5px;line-height:1.4}
+  .mobile-care-foot{margin-top:17px;padding-top:13px;gap:10px}
+  .mobile-care-help{min-height:48px;border-radius:11px;padding:11px 13px;background:#e7efed;font-size:13.5px}
+  .mobile-care-note{font-size:12px;line-height:1.5;margin:0}
+  .mobile-care-back{margin:0 0 14px;min-height:44px}
+  .mobile-care-kicker{margin-bottom:9px}
+  /* Páginas individuais — conteúdo relevante, sem abertura duplicada */
+  .story-service-page .page-hero>.container{padding:13px 0 21px}
+  .story-service-page .breadcrumb{margin-bottom:12px}
+  .story-service-page .page-hero h1{font-size:clamp(31px,8vw,39px);line-height:1.11;margin-bottom:8px}
+  .story-service-page .page-hero-copy>.page-hero-tagline{font-size:18px;margin:0 0 8px}
+  .story-service-page .page-hero-copy>p:not(.page-hero-tagline){font-size:15.5px;line-height:1.58}
+  .story-service-page .page-hero .btn{min-height:48px;margin-top:12px}
+  .mobile-treatment-story{background:#f6f8f6;padding:0 0 32px}
+  .mobile-treatment-story::before{display:none}
+  .mobile-treatment-story .story-container{width:min(calc(100% - 36px),550px)}
+  .story-narrative{padding-top:23px;border-top:0;scroll-margin-top:98px}
+  .story-title{font-size:clamp(27px,7vw,34px);margin:9px 0 8px;line-height:1.15}
+  .story-lead{font-size:15px;line-height:1.58;margin:0 0 19px;max-width:44ch}
+  .story-chapters{gap:0;border-left:1px solid #cbd9d5;margin:0 0 0 12px;padding-left:22px}
+  .story-chapter,.story-chapter:nth-child(2),.story-chapter:nth-child(3){
+    position:relative;min-height:0;
+    padding:16px 0 18px;border:0;border-bottom:1px solid #dce6e2;
+    background:transparent;border-radius:0;box-shadow:none;
+  }
+  .story-chapter:last-child{border-bottom:0}
+  .story-chapter::before{
+    content:"";position:absolute;left:-28.5px;top:21px;width:12px;height:12px;
+    border:2px solid #6a8c8c;background:#f6f8f6;border-radius:50%;
+  }
+  .story-chapter-top{margin:0 0 8px}
+  .story-chapter-number{font-size:11px;color:#5c7881;letter-spacing:.1em}
+  .story-chapter-art{display:none}
+  .story-chapter h3{font-size:clamp(21px,5.55vw,26px);line-height:1.2;margin-bottom:9px;letter-spacing:-.037em}
+  .story-chapter p{font-size:15.5px;line-height:1.64}
+  .story-ending{margin-top:19px;border-radius:14px;padding:20px 19px;background:#253d44}
+  .story-ending h2{font-size:24px;margin:8px 0 8px;line-height:1.18}
+  .story-ending p{font-size:14.5px;line-height:1.58;margin:0 0 14px}
+  .story-ending .btn{min-height:48px}
+  .story-extra{margin-top:13px;gap:3px}
+  .story-more{min-height:46px;padding:11px 14px;border-radius:11px;background:#fff;font-size:13.5px}
+  .story-back{min-height:45px;font-size:13.5px}
+  .story-service-page .faq-section{padding-top:43px}
+}
+@media (max-width:360px){
+  .mobile-care-option,.mobile-care-service{min-height:68px;padding:10px 11px}
+  .mobile-treatment-story .story-container{width:calc(100% - 32px)}
+  .story-chapter{padding:14px 0 17px}
+}
+@media (prefers-reduced-motion:reduce){
+  .story-chapter.is-inview{animation:none!important}
+  .mobile-care-option,.mobile-care-service{transition:none}
+}
