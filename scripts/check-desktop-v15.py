@@ -3,6 +3,7 @@ Os testes de layout visual e Safari físico permanecem pendentes."""
 from pathlib import Path
 from html.parser import HTMLParser
 from html import escape
+from urllib.parse import unquote
 import json
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -57,7 +58,7 @@ for line in ['Explore com calma','Converse com a equipe','Conheça as possibilid
 for g in groups:
  assert f'id="concierge-{g["id"]}"' in html,g['id']
  assert 'assets/img/'+g['image'] in p.images,g['id']
- assert escape(g['whatsapp_message']) in html or g['whatsapp_message'].replace(' ','%20')[:20] in html,g['id']
+ assert any(g['whatsapp_message'] in unquote(link) for link in p.links if link.startswith('https://wa.me/')),g['id']
 for pair in compare['pairs']:
  assert escape(pair['intro']) in html
  for item in pair['services']:
