@@ -1,6 +1,22 @@
 /* Maison V13 — comparações educativas. Sem JS: as duas explicações ficam disponíveis. */
 (() => {
   'use strict';
+  const backLink = document.querySelector('[data-return-to-quiz]');
+  if (backLink && window.history && window.history.length > 1) {
+    try {
+      const previous = new URL(document.referrer);
+      const current = new URL(window.location.href);
+      // Só usar Voltar quando esta página veio diretamente da escolha da Maison.
+      if (previous.origin === current.origin &&
+          previous.pathname.endsWith('/especialidades.html')) {
+        backLink.addEventListener('click', event => {
+          event.preventDefault();
+          window.history.back();
+        });
+      }
+    } catch (_) { /* manter o href normal caso a origem não possa ser verificada */ }
+  }
+
   const root = document.querySelector('[data-care-compare]');
   if (!root) return;
   const list = root.querySelector('[data-compare-tabs]');
