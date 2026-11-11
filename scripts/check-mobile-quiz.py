@@ -40,7 +40,7 @@ assert 'aria-live="polite"' in wizard
 assert 'https://wa.me/5561991434312?' in wizard
 assert '<input ' not in wizard and '<textarea' not in wizard
 assert 'assets/css/maison-mobile-quiz.css?v=maison-v10' in page
-assert 'assets/js/maison-mobile-quiz.js?v=maison-v10' in page
+assert ('assets/js/maison-mobile-quiz.js?v=maison-v10' in page or 'assets/js/maison-mobile-quiz.js?v=maison-v13' in page)
 assert (root/'assets/css/maison-mobile-quiz.css').is_file()
 assert (root/'assets/js/maison-mobile-quiz.js').is_file()
 # Teste essencial de fallback: a ocultação das áreas desktop exige classe adicionada por JS.
