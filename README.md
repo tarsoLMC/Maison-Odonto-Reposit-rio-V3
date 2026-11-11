@@ -1,49 +1,34 @@
-# Maison Odonto — Site institucional V3
+# Maison Odontologia — V4
 
-Site estático HTML/CSS/JavaScript para testes da Maison Odontologia Especializada. Criado como repositório de código pronto para integração GitHub ↔ Hostinger.
+Site estático com identidade visual oficial, fotografias locais, navegação por especialidade e contato direto pelo WhatsApp. Publicação na branch `main` de `tarsoLMC/Maison-Odonto-Reposit-rio-V3`, conectada ao site de testes da Hostinger.
 
-> **Status:** preparado localmente. Este pacote não cria, por si só, um repositório remoto no GitHub nem altera a Hostinger. A conexão exige autenticação e autorização do proprietário.
+## Páginas
 
-## Conteúdo
+- Início, Especialidades, A Maison, Convênios, Contato e Privacidade.
+- Implantes dentários, Invisalign, lentes de contato dental, clareamento dental, próteses dentárias e harmonização orofacial.
 
-- `index.html` — página inicial com introdução cinematográfica e chamadas para WhatsApp.
-- `especialidades.html` — tratamentos apresentados pela clínica.
-- `a-maison.html` — história, espaço e proposta de atendimento.
-- `convenios.html` — consulta de convênios sem promessas de cobertura.
-- `contato.html` — localização, horários e WhatsApp.
-- `privacidade.html` — texto inicial de privacidade, a revisar antes de publicar.
-- `assets/` — CSS, JS e imagens locais do protótipo.
-- `docs/` — implantação, validação e pendências editoriais.
+## Estrutura
 
-### Teste local
+- `assets/css/maison.css`: identidade visual e responsividade.
+- `assets/js/maison.js`: apresentação, fechamento do menu e filtros de especialidades.
+- `assets/img/`: logomarca oficial e fotos publicadas no site original, otimizadas em WebP.
+- `assets/fonts/`: fontes locais e licenças.
+- `scripts/check-site.py`: verificação dos arquivos, links, âncoras e metadados.
+- `docs/ESTRATEGIA-SEO.md`: palavras de busca, intenção e decisões editoriais.
 
-Abra `index.html` diretamente ou execute no diretório do projeto:
+Os arquivos HTML são completos: texto, navegação e contato não dependem de uma aplicação JavaScript. O menu do celular usa `details/summary` nativos. A introdução tem saída independente por CSS e nunca bloqueia a rolagem.
 
-```bash
-python -m http.server 8000
+A pasta raiz é o conteúdo de publicação. Não há framework, instalação de pacotes ou comando de build necessário na Hostinger.
+
+## Verificações
+
+```sh
+python3 scripts/check-site.py
+node --check assets/js/maison.js
 ```
 
-Em seguida, acesse `http://localhost:8000/`.
+## Endereço de testes e produção
 
-## Como publicar com GitHub + Hostinger
+A V4 mantém `noindex,nofollow` e `robots.txt` bloqueando indexação no endereço temporário. Não há estimativas de volume de buscas nem promessa de posicionamento. A migração para o domínio definitivo, os dados profissionais e os horários dependem das conferências descritas em `docs/CHECKLIST-ANTES-DE-PUBLICAR.md`.
 
-Veja [docs/PUBLICACAO-HOSTINGER.md](docs/PUBLICACAO-HOSTINGER.md).
-
-A Hostinger oferece integração por OAuth em **Sites → Gerenciar site → Avançado → Git**, permitindo escolher repositório, branch (`main`) e pasta de destino. Depois da primeira publicação, novos commits enviados para a branch de produção podem atualizar o site automaticamente.
-
-**Comece por uma pasta vazia de homologação**, nunca pelo diretório de produção contendo arquivos que você ainda não salvou.
-
-## Proteção do protótipo
-
-O projeto contém `robots=noindex,nofollow` nas páginas. **Não remova isso enquanto estiver em teste**. Para colocar em produção depois de aprovado, será preciso remover a diretiva, configurar canônicas e tags sociais com URLs reais e auditar questões regulatórias.
-
-## Pendências obrigatórias
-
-- Confirmar dados profissionais e registros CRO-DF exigidos.
-- Confirmar horários divergentes entre a arte recebida e outras fontes.
-- Confirmar convênios e informações de atendimento.
-- Validar o uso das imagens existentes, algumas carregadas do domínio antigo.
-- Revisar informações legais e de privacidade com o responsável.
-- Testar no Safari do iPhone e em Android real.
-
-Nenhuma senha, token ou credencial de painel é necessária ou deve ser colocada neste repositório.
+Nenhuma credencial deve ser incluída neste repositório.

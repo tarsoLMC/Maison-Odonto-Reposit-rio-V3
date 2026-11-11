@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Homologação. Liberar indexação apenas na publicação no domínio definitivo.
