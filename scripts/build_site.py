@@ -138,8 +138,8 @@ def location(full=False):
 def faq(items,title='Respostas para<br>o seu <em>próximo passo.</em>',anchor=None):
  id_attr=f' id="{anchor}"' if anchor else ''
  return f'''<section class="section faq-section paper"{id_attr}><div class="container faq-grid"><div>{eyebrow('PERGUNTAS FREQUENTES')}<h2>{title}</h2><p>Prefere conversar? A equipe da Maison recebe sua mensagem diretamente.</p>{external(wa('Olá, Maison! Gostaria de tirar uma dúvida antes de agendar.'),'Falar com a equipe')}</div><div class="faq-list">{''.join(f'<details><summary>{x["question"]}{icon("plus")}</summary><p>{x["answer"]}</p></details>' for x in items)}</div></div></section>'''
-def page_hero(eyeb,heading_,text,photo='clinica.webp',label='Foto da clínica',crumb='',cta_context=None,tagline=None):
- return f'''<section class="page-hero forest"><div class="page-hero-photo">{image(photo,label,eager=True)}</div><div class="container"><div class="breadcrumb"><a href="index.html">Início</a><span>/</span>{crumb or eyeb}</div><div class="page-hero-copy">{eyebrow(eyeb)}<h1>{heading_}</h1>{f'<p class="page-hero-tagline">{tagline}</p>' if tagline else ''}<p>{text}</p>{cta('Agendar avaliação' if cta_context else 'Agendar minha consulta',cta_context)}</div><span class="page-photo-label">{label}</span></div></section>'''
+def page_hero(eyeb,heading_,text,photo='clinica.webp',label='Foto da clínica',crumb='',cta_context=None,tagline=None,accessible_alt=None):
+ return f'''<section class="page-hero forest"><div class="page-hero-photo">{image(photo,accessible_alt or label,eager=True)}</div><div class="container"><div class="breadcrumb"><a href="index.html">Início</a><span>/</span>{crumb or eyeb}</div><div class="page-hero-copy">{eyebrow(eyeb)}<h1>{heading_}</h1>{f'<p class="page-hero-tagline">{tagline}</p>' if tagline else ''}<p>{text}</p>{cta('Agendar avaliação' if cta_context else 'Agendar minha consulta',cta_context)}</div><span class="page-photo-label">{label}</span></div></section>'''
 COMPARE=json.loads((ROOT/'content/maison-compare.json').read_text(encoding='utf-8'))
 def story_quickfaq(s):
  items=s.get('faqs',[])
@@ -216,7 +216,7 @@ write_page('contato.html','Contato e agendamento na Asa Sul | Maison Odontologia
 
 for s in services:
  name=s['name'];asset=s['asset']
- body=page_hero(name.upper()+' · ASA SUL, BRASÍLIA',f'{name}<br><em>na Maison.</em>',s['intro'],asset,'Imagem ilustrativa relacionada a '+name.lower(),name,cta_context='Olá, Maison! Gostaria de agendar uma avaliação sobre '+name.lower()+'.',tagline=s['heading'].replace('<br>',' ').replace('<em>','').replace('</em>',''))
+ body=page_hero(name.upper()+' · ASA SUL, BRASÍLIA',f'{name}<br><em>na Maison.</em>',s['intro'],asset,'Imagem ilustrativa',name,cta_context='Olá, Maison! Gostaria de agendar uma avaliação sobre '+name.lower()+'.',tagline=s['heading'].replace('<br>',' ').replace('<em>','').replace('</em>',''),accessible_alt='Imagem ilustrativa relacionada a '+name.lower())
  body+=desktop_treatment_guide(s)
  body+=mobile_treatment_story(s)
  content_sections=[x for x in s.get('sections',[]) if x['heading'] not in ['Perguntas frequentes','Agende sua avaliação na Asa Sul']]
