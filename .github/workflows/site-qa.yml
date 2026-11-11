@@ -23,5 +23,13 @@ jobs:
         run: python3 scripts/check-site.py
       - name: Verificar a V8
         run: python3 scripts/check-v8.py
+      - name: Verificar experiência de tratamentos V9
+        run: python3 scripts/check-v9.py
+      - name: Confirmar que o gerador reproduz o HTML publicado
+        run: git diff --exit-code -- especialidades.html
       - name: Verificar sintaxe do JavaScript
-        run: node --check assets/js/maison.js
+        run: |
+          node --check assets/js/maison.js
+          node --check assets/js/maison-concierge.js
+      - name: Testar interação das categorias no JavaScript
+        run: node --test tests/concierge-interaction.test.cjs
