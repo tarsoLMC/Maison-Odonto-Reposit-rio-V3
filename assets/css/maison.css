@@ -128,7 +128,7 @@ h1 em,h2 em,h3 em{color:#62768b}.forest h1 em,.forest h2 em,.forest h3 em{color:
 .treatment-chooser-links>a>.icon{margin-left:auto;min-width:18px;width:18px;height:18px}
 .services-grid{gap:18px}
 .services-grid .service-card-content{min-height:0}
-.services-grid .service-card a{height:100%}
+.services-grid .service-card > a{height:100%}
 .services-grid .service-card p{font-size:15px;line-height:1.7}
 .service-card-consult{background:radial-gradient(circle at 85% 10%,#6d819c55,transparent 45%),linear-gradient(140deg,#162331,#344658);border-color:#50677f;color:#f3f7fc}
 .service-card-consult:hover{border-color:#8faac2}
