@@ -1,0 +1,194 @@
+{
+  "editorial_note": "Informações gerais sobre procedimentos, não diagnóstico ou indicação individual. Os protocolos e a oferta específica de serviços devem ser confirmados com a equipe da Maison.",
+  "guides": [
+    {
+      "id": "implantes",
+      "heading": "Implante dentário: o que muda na prática?",
+      "tagline": "Reposição de dentes com apoio no osso",
+      "facts": [
+        {
+          "label": "O que é",
+          "title": "Implante não é o dente artificial",
+          "text": "O implante substitui a raiz e pode sustentar uma coroa, ponte ou prótese. São componentes diferentes do tratamento."
+        },
+        {
+          "label": "Como se planeja",
+          "title": "A condição do osso importa",
+          "text": "A avaliação da gengiva, do osso e da saúde geral orienta a possibilidade de instalação e a necessidade de outras etapas."
+        },
+        {
+          "label": "O que considerar",
+          "title": "A integração leva tempo",
+          "text": "Após a instalação, o implante precisa se integrar ao osso. Em determinados casos, isso exige meses antes da prótese definitiva."
+        }
+      ],
+      "question": "Meu caso precisa de preparo do osso? Quando a prótese poderá ser instalada?",
+      "source": {
+        "label": "American Dental Association — implantes",
+        "url": "https://www.mouthhealthy.org/all-topics-a-z/implants/"
+      }
+    },
+    {
+      "id": "proteses",
+      "heading": "Prótese dentária: fixa ou removível?",
+      "tagline": "Opções para repor dentes ausentes",
+      "facts": [
+        {
+          "label": "O que é",
+          "title": "Existem diferentes formatos",
+          "text": "Próteses parciais ou totais, pontes e coroas atendem necessidades distintas. Nem toda prótese exige implante."
+        },
+        {
+          "label": "Como se escolhe",
+          "title": "O apoio faz diferença",
+          "text": "O dentista considera dentes remanescentes, gengiva e possibilidades de apoio para discutir opções fixas ou removíveis."
+        },
+        {
+          "label": "O que considerar",
+          "title": "Adaptação e manutenção",
+          "text": "Próteses removíveis podem exigir adaptação e ajustes ao longo do tempo. A limpeza e o acompanhamento são parte do tratamento."
+        }
+      ],
+      "question": "Qual solução tem apoio adequado para minha boca e como será a higiene diária?",
+      "source": {
+        "label": "NHS — próteses dentárias",
+        "url": "https://www.nhs.uk/tests-and-treatments/dentures/"
+      }
+    },
+    {
+      "id": "invisalign",
+      "heading": "Invisalign®: alinhamento depende da rotina",
+      "tagline": "Alinhadores removíveis e acompanhamento",
+      "facts": [
+        {
+          "label": "O que é",
+          "title": "Placas feitas em sequência",
+          "text": "Os alinhadores exercem forças planejadas para movimentar os dentes. A indicação depende da posição dentária e da mordida."
+        },
+        {
+          "label": "Como usar",
+          "title": "Compromisso diário de uso",
+          "text": "Em geral, os alinhadores precisam ser usados por cerca de 22 horas por dia, conforme orientação ortodôntica, e retirados para refeições e higiene."
+        },
+        {
+          "label": "O que considerar",
+          "title": "O fim não dispensa contenção",
+          "text": "Após o alinhamento, o ortodontista pode indicar contenções para reduzir movimentações indesejadas dos dentes."
+        }
+      ],
+      "question": "Meu tipo de mordida pode ser tratado com alinhadores? Como será a contenção?",
+      "source": {
+        "label": "American Association of Orthodontists — alinhadores",
+        "url": "https://aaoinfo.org/whats-trending/braces-vs-clear-aligners/"
+      }
+    },
+    {
+      "id": "lentes",
+      "heading": "Lentes dentais: estética também exige limites",
+      "tagline": "Mudanças de formato, cor e proporção",
+      "facts": [
+        {
+          "label": "O que fazem",
+          "title": "Cobrem a face visível do dente",
+          "text": "Lentes e facetas recobrem a parte da frente dos dentes e podem modificar aparência, forma e tonalidade, conforme indicação."
+        },
+        {
+          "label": "Antes de escolher",
+          "title": "A saúde bucal vem primeiro",
+          "text": "O profissional precisa avaliar dentes, gengivas, mordida e alternativas como clareamento ou alinhamento antes de indicar facetas."
+        },
+        {
+          "label": "O que considerar",
+          "title": "Pode haver alteração irreversível",
+          "text": "Algumas facetas exigem remover esmalte dental; isso não se reverte. Também podem ocorrer desgaste, fratura ou descolamento."
+        }
+      ],
+      "question": "É necessário remover esmalte no meu caso? Existe uma opção mais conservadora?",
+      "source": {
+        "label": "American Dental Association — facetas",
+        "url": "https://www.mouthhealthy.org/all-topics-a-z/veneers"
+      }
+    },
+    {
+      "id": "clareamento",
+      "heading": "Clareamento dentário: o que muda de cor?",
+      "tagline": "Tratamento sobre dentes naturais",
+      "facts": [
+        {
+          "label": "O que faz",
+          "title": "Clareia dentes naturais",
+          "text": "O gel clareador atua na coloração de dentes naturais. Coroas, facetas e restaurações não mudam de tonalidade da mesma forma."
+        },
+        {
+          "label": "Como pode ser feito",
+          "title": "Consultório ou uso supervisionado",
+          "text": "O dentista pode orientar um procedimento no consultório ou o uso domiciliar com moldeiras e gel adequados ao caso."
+        },
+        {
+          "label": "O que considerar",
+          "title": "Sensibilidade pode ocorrer",
+          "text": "Sensibilidade dentária e irritação gengival temporárias são possíveis. O efeito da cor também pode se modificar com o tempo."
+        }
+      ],
+      "question": "Minhas restaurações vão contrastar com os dentes após o clareamento?",
+      "source": {
+        "label": "American Dental Association — clareamento",
+        "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening"
+      }
+    },
+    {
+      "id": "cirurgia",
+      "heading": "Cirurgia dentária: o cuidado não termina no procedimento",
+      "tagline": "Extrações e intervenções planejadas",
+      "facts": [
+        {
+          "label": "Quando é considerada",
+          "title": "Nem toda extração é igual",
+          "text": "A posição do dente e as condições da região influenciam se a extração pode ser simples ou exigir técnica cirúrgica."
+        },
+        {
+          "label": "Como se planeja",
+          "title": "Avaliar antes de intervir",
+          "text": "O dentista examina a região e define os exames e a abordagem de anestesia adequados ao procedimento."
+        },
+        {
+          "label": "O que considerar",
+          "title": "Recuperação tem orientações próprias",
+          "text": "Dor e inchaço podem ocorrer após cirurgias. Alimentação, higiene e sinais que exigem contato devem ser explicados pela equipe."
+        }
+      ],
+      "question": "Como será minha recuperação e quais sinais exigem avaliação depois da cirurgia?",
+      "source": {
+        "label": "UCLH / NHS — cuidados após extrações",
+        "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/dental-extractions-post-operative-instructions"
+      }
+    },
+    {
+      "id": "harmonizacao",
+      "heading": "Harmonização facial: técnicas e riscos são diferentes",
+      "tagline": "Avaliação estética das proporções faciais",
+      "facts": [
+        {
+          "label": "O que envolve",
+          "title": "Não existe uma técnica única",
+          "text": "Toxina botulínica e preenchimentos têm ações e finalidades distintas. Os procedimentos considerados dependem do objetivo e da anatomia."
+        },
+        {
+          "label": "Antes de decidir",
+          "title": "Conheça o profissional e a técnica",
+          "text": "É importante esclarecer quem executará o procedimento, qual produto será usado, quais alternativas existem e quais são os cuidados."
+        },
+        {
+          "label": "O que considerar",
+          "title": "Procedimentos têm riscos",
+          "text": "Preenchedores podem causar inchaço, infecção e, raramente, complicações vasculares graves. Discuta riscos e condutas antes de decidir."
+        }
+      ],
+      "question": "Qual técnica está sendo considerada, quais seus riscos e quem realizará o procedimento?",
+      "source": {
+        "label": "FDA — informações de segurança sobre preenchimentos",
+        "url": "https://www.fda.gov/medical-devices/aesthetic-cosmetic-devices/dermal-fillers-soft-tissue-fillers"
+      }
+    }
+  ]
+}
