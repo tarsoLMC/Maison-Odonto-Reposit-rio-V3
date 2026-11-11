@@ -14,7 +14,7 @@ function node(dataset={}, textContent='') {
   scrollIntoView(){this.scrolled=true}
  };
 }
-function setup(onMobile=true) {
+function setup(onMobile=true, initialCare=null) {
  const options=[
   node({chooseCare:'reabilitacao',careTitle:'Reabilitação'}),
   node({chooseCare:'alinhamento',careTitle:'Alinhamento'}),
@@ -40,9 +40,10 @@ function setup(onMobile=true) {
  const active=new Set();
  const body={classList:{toggle(cls,on){on?active.add(cls):active.delete(cls)}}};
  const media={matches:onMobile,events:{},addEventListener(evt,fn){this.events[evt]=fn}};
- const window={matchMedia:()=>media};
+ const history={state:initialCare?{maisonCare:initialCare}:null,replaceState(next){this.state=next}};
+ const window={matchMedia:()=>media,history};
  vm.runInNewContext(script,{document:{querySelector:()=>root,body},window});
- return {options,services,first,second,back,all,title,intro,stepLabel,categoryLabel,root,active,media};
+ return {options,services,first,second,back,all,title,intro,stepLabel,categoryLabel,root,active,media,history};
 }
 
 test('telefone inicia etapa 1, sem enviar dados ou ocultar a primeira escolha',()=>{
@@ -83,4 +84,17 @@ test('desktop não ativa a experiência mobile e resize restaura o site',()=>{
  u.media.matches=false;
  u.media.events.change();
  assert.equal(u.active.has('mobile-care-active'),false);
+});
+
+test('navegação guarda somente a categoria na entrada do histórico e restaura no retorno',()=>{
+ const a=setup();
+ a.options[2].click();
+ assert.equal(a.history.state.maisonCare,'estetica');
+ const restored=setup(true,a.history.state.maisonCare);
+ assert.equal(restored.root.dataset.step,'2');
+ assert.deepEqual(restored.services.map(x=>x.hidden),[true,true,true,false,false,true,true]);
+ assert.equal(restored.root.scrolled,undefined);
+ assert.equal(restored.title.focused,false);
+ restored.back.click();
+ assert.equal(restored.history.state.maisonCare,null);
 });
