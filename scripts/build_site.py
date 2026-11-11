@@ -6,7 +6,7 @@ import json
 ROOT=Path(__file__).resolve().parents[1]
 D=json.loads((ROOT/'content/maison.json').read_text())
 BASE='https://cornflowerblue-reindeer-259674.hostingersite.com'
-V='maison-v5-1'
+V='maison-v5-2'
 CONTACT=D['contacts']; MAP=D['address']['directions_url']; INST=CONTACT['instagram']; REVIEWS=D['reviews']['all_reviews_link']
 SVG={
 'arrow':'<path d="M5 12h14m-6-6 6 6-6 6"/>',

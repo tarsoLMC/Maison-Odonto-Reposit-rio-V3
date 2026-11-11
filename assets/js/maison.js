@@ -31,11 +31,14 @@
   document.querySelector('.contact-dismiss')?.addEventListener('click', () => {
     const float = document.querySelector('.contact-float');
     float.classList.add('is-compact');
+    float.querySelector('a').setAttribute('aria-label', 'Falar com a Maison pelo WhatsApp');
     float.querySelector('a').focus();
   });
   document.querySelectorAll('[data-carousel]').forEach(rail => {
     const name = rail.dataset.carousel;
     const cards = [...rail.children];
+    rail.tabIndex = 0;
+    rail.setAttribute('role', 'region');
     const prev = document.querySelector(`[data-prev="${name}"]`);
     const next = document.querySelector(`[data-next="${name}"]`);
     const status = document.querySelector(`[data-status="${name}"]`);
@@ -66,6 +69,12 @@
       }, 7000);
     };
     const stop = () => { playing = false; sync(); };
+    rail.addEventListener('keydown', e => {
+      if (e.target !== rail || !['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) return;
+      e.preventDefault(); stop();
+      if (e.key === 'Home' || e.key === 'End') rail.scrollTo({left:e.key === 'Home' ? 0 : end(),behavior:reduced.matches ? 'instant' : 'smooth'});
+      else move(e.key === 'ArrowRight' ? 1 : -1);
+    });
     prev?.addEventListener('click', () => { stop(); move(-1); });
     next?.addEventListener('click', () => { stop(); move(1); });
     rail.addEventListener('pointerdown', stop, { passive: true });

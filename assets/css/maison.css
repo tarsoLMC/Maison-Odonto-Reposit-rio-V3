@@ -34,3 +34,25 @@
 
 /* Keep the expanded photo inside the dialog, including wide source images. */
 .gallery-modal{width:min(1180px,calc(100vw - 32px))}.modal-image-wrap{display:grid;grid-template-columns:38px minmax(0,1fr) 38px}.modal-image-wrap img{width:100%;min-width:0;max-width:100%;height:auto;max-height:70dvh;object-fit:contain}@media(max-width:720px){.gallery-modal{width:calc(100vw - 20px)}.modal-image-wrap{grid-template-columns:30px minmax(0,1fr) 30px}}
+
+/* Audit: legibility, touch targets and keyboard focus, preserving the V5 composition. */
+.service-card p,.about-copy>p,.purpose-grid p,.plans-heading p,.service-detail-content p,.faq-list details p,.legal-copy p,.address-card>p,.final-cta p,.plans-info p{font-size:16px}
+.review-person small,.review-note,.plans-bottom,.plans-bottom>a,.service-card .micro-label,.purpose-num,.page-photo-label,.service-photo-note,.gallery-item figcaption>span{font-size:11px}
+.review-person small,.service-card .micro-label,.purpose-num{color:#536449}
+.review-person strong,.card-link,.footer-top>div:not(.footer-brand)>a,.footer-top>div:not(.footer-brand)>p,.contact-channels>a,.hours-row b,.hours-row span{font-size:13px}
+.sedation-link b{font-size:13px}.sedation-link small{font-size:12px}.gallery-item figcaption b{font-size:13px}
+.service-photo-note,.page-photo-label{background:#082d25d9;padding:3px 7px;border-radius:3px}
+.footer-bottom,.footer-bottom small,.cta-sub{font-size:11px}
+.carousel-controls button,.gallery-modal button{width:44px;height:44px;min-width:44px}
+.modal-image-wrap{grid-template-columns:44px minmax(0,1fr) 44px}
+.header-cta{min-height:44px}.contact-dismiss{width:28px;height:28px}
+[data-carousel]:focus-visible{outline:3px solid #9c742b;outline-offset:-3px}
+.service-card a:focus-visible,.gallery-item a:focus-visible{outline:3px solid #9c742b;outline-offset:-4px}
+@media(max-width:720px){
+ .footer-top>div:not(.footer-brand)>a,.contact-channels>a,.plans-bottom>a{min-height:44px}
+ .footer-top>div:not(.footer-brand)>p{font-size:12px}
+ .carousel-bottom{flex-wrap:wrap}.carousel-controls{gap:8px}.carousel-controls>span{font-size:10px}
+ .mobile-panel{padding-bottom:110px}
+ .hero-copy>p,.page-hero-copy>p{font-size:16px}
+ .modal-image-wrap{gap:5px}
+}
