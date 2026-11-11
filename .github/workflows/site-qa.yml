@@ -1,0 +1,27 @@
+name: Verificação do site Maison
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gerar todas as páginas
+        run: python3 scripts/build_site.py
+      - name: Verificar rotas, links, dados e WhatsApp
+        run: python3 scripts/check-site.py
+      - name: Verificar a V8
+        run: python3 scripts/check-v8.py
+      - name: Verificar sintaxe do JavaScript
+        run: node --check assets/js/maison.js
