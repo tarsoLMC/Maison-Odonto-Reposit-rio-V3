@@ -39,8 +39,8 @@ for name,path in slugs.items():
  assert 'assets/css/maison-story-v11.css?v=maison-v11' in s,path
  assert 'assets/js/maison-story-v11.js?v=maison-v11' in s,path
  assert 'id="historia-tratamento"' in s and 'id="informacoes-completas"' in s,path
- assert 'href="#historia-tratamento"' in v.links,path
- assert 'href="especialidades.html"' in v.links,path
+ assert '#historia-tratamento' in v.links,path
+ assert 'especialidades.html' in v.links,path
  assert any('data-story-expand' in b and b.get('aria-controls')=='informacoes-completas' for b in v.buttons)
  assert 'class="service-detail-content"' in s and 'class="journey-grid"' in s,path
  assert 'class="faq-list"' in s,path
