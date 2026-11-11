@@ -26,7 +26,8 @@
       "source": {
         "label": "American Dental Association — implantes",
         "url": "https://www.mouthhealthy.org/all-topics-a-z/implants/"
-      }
+      },
+      "meta_description": "Implante dentário na Asa Sul: saiba como se avaliam osso e gengiva, integração do implante e instalação da prótese. Fale com a Maison."
     },
     {
       "id": "proteses",
@@ -53,7 +54,8 @@
       "source": {
         "label": "NHS — próteses dentárias",
         "url": "https://www.nhs.uk/tests-and-treatments/dentures/"
-      }
+      },
+      "meta_description": "Próteses dentárias fixas e removíveis: entenda apoios, adaptação, higiene e avaliação odontológica na Maison, Asa Sul."
     },
     {
       "id": "invisalign",
@@ -80,7 +82,8 @@
       "source": {
         "label": "American Association of Orthodontists — alinhadores",
         "url": "https://aaoinfo.org/whats-trending/braces-vs-clear-aligners/"
-      }
+      },
+      "meta_description": "Invisalign®: entenda alinhadores removíveis, tempo de uso diário, acompanhamento e contenção. Avaliação na Maison, Brasília."
     },
     {
       "id": "lentes",
@@ -107,7 +110,8 @@
       "source": {
         "label": "American Dental Association — facetas",
         "url": "https://www.mouthhealthy.org/all-topics-a-z/veneers"
-      }
+      },
+      "meta_description": "Lentes de contato dentais: saiba o que podem modificar, quando há desgaste de esmalte e quais alternativas avaliar na Maison."
     },
     {
       "id": "clareamento",
@@ -134,7 +138,8 @@
       "source": {
         "label": "American Dental Association — clareamento",
         "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening"
-      }
+      },
+      "meta_description": "Clareamento de dentes naturais: consultório ou moldeiras supervisionadas, sensibilidade e diferença de cor em restaurações. Maison Asa Sul."
     },
     {
       "id": "cirurgia",
@@ -161,7 +166,8 @@
       "source": {
         "label": "UCLH / NHS — cuidados após extrações",
         "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/dental-extractions-post-operative-instructions"
-      }
+      },
+      "meta_description": "Cirurgia dentária na Asa Sul: saiba como são avaliadas extrações, técnica, recuperação e sinais de atenção. Converse com a Maison."
     },
     {
       "id": "harmonizacao",
@@ -188,7 +194,8 @@
       "source": {
         "label": "FDA — informações de segurança sobre preenchimentos",
         "url": "https://www.fda.gov/medical-devices/aesthetic-cosmetic-devices/dermal-fillers-soft-tissue-fillers"
-      }
+      },
+      "meta_description": "Harmonização facial: conheça diferenças entre técnicas, riscos, manutenção e perguntas para a avaliação profissional na Maison."
     }
   ]
 }
