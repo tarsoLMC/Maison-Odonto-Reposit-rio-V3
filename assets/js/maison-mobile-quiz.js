@@ -48,7 +48,7 @@
       services.forEach(link => link.hidden = false);
       all.hidden = false;
     }
-    if (media.matches) root.scrollIntoView({ block: 'start', behavior: 'instant' });
+    if (media.matches) root.scrollIntoView({ block: 'start', behavior: 'auto' });
     title.focus({ preventScroll: true });
   }
 
