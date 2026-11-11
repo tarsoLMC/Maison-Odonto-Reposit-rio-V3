@@ -27,12 +27,15 @@ jobs:
         run: python3 scripts/check-v9.py
       - name: Verificar a jornada guiada mobile V10
         run: python3 scripts/check-mobile-quiz.py
+      - name: Validar narrativa mobile V11
+        run: python3 scripts/check-story-v11.py
       - name: Confirmar que o gerador reproduz o HTML publicado
-        run: git diff --exit-code -- especialidades.html
+        run: git diff --exit-code -- *.html
       - name: Verificar sintaxe do JavaScript
         run: |
           node --check assets/js/maison.js
           node --check assets/js/maison-concierge.js
           node --check assets/js/maison-mobile-quiz.js
+          node --check assets/js/maison-story-v11.js
       - name: Testar interação das categorias no JavaScript
-        run: node --test tests/concierge-interaction.test.cjs tests/mobile-quiz.test.cjs
+        run: node --test tests/concierge-interaction.test.cjs tests/mobile-quiz.test.cjs tests/story-v11.test.cjs

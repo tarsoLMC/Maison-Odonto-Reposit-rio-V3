@@ -1,0 +1,85 @@
+/* Maison V11 | Storytelling de tratamentos mobile. Conteúdo sempre legível sem JS. */
+.mobile-treatment-story{display:none}
+@media(max-width:720px){
+ .story-service-page .page-hero>.container{padding-top:14px;padding-bottom:27px}
+ .story-service-page .breadcrumb{margin-bottom:15px;font-size:10px}
+ .story-service-page .page-hero .eyebrow{font-size:10px;margin-bottom:10px}
+ .story-service-page .page-hero h1{font-size:clamp(31px,8vw,39px);line-height:1.13;margin-bottom:10px}
+ .story-service-page .page-hero-copy>.page-hero-tagline{font-size:19px;line-height:1.35;margin:0 0 8px}
+ .story-service-page .page-hero-copy>p:not(.page-hero-tagline){font-size:15.5px;line-height:1.62}
+ .story-service-page .page-hero .btn{min-height:49px;margin-top:13px}
+ .story-service-page .page-photo-label{font-size:9px}
+ .mobile-treatment-story{
+  display:block;position:relative;overflow:hidden;isolation:isolate;
+  background:linear-gradient(165deg,#f5f6f2 0%,#f0f4f2 45%,#f8f8f6 100%);
+  color:#203943;padding:0 0 44px;
+ }
+ .mobile-treatment-story::before{
+  content:"";z-index:-1;position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 98% 5%,#afc8c16b,transparent 35%),
+             radial-gradient(circle at -10% 75%,#c9d5d855,transparent 42%);
+ }
+ .mobile-treatment-story .story-container{width:min(calc(100% - 34px),550px);margin:0 auto}
+ .story-intro{padding:25px 0 27px}
+ .story-eyebrow{display:flex;align-items:center;gap:9px;font-size:10.5px;font-weight:740;letter-spacing:.13em;color:#577481;text-transform:uppercase}
+ .story-eyebrow::before{content:"";width:20px;height:1px;background:#67828b}
+ .story-intro h2{font-size:clamp(28px,7.2vw,37px);line-height:1.13;letter-spacing:-.052em;margin:11px 0 13px;font-weight:690;color:#213a45}
+ .story-intro h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#537077}
+ .story-intro>p{font-size:15.5px;line-height:1.68;margin:0 0 21px;color:#536d75}
+ .story-cta{display:flex;align-items:center;justify-content:space-between;gap:13px;min-height:53px;padding:14px 17px;
+   background:linear-gradient(125deg,#1e363d,#34515b);border:1px solid #28444d;border-radius:13px;
+   color:#fff;text-decoration:none;box-shadow:0 11px 23px #18383e30;font-size:14px;font-weight:740;line-height:1.4}
+ .story-cta:hover{background:#294c54}
+ .story-cta .icon{width:19px;height:19px;flex:none}
+ .story-continue{display:inline-flex;align-items:center;gap:9px;min-height:48px;margin-top:10px;
+  font-size:13.5px;font-weight:640;color:#3f656f;text-decoration:underline;text-underline-offset:4px}
+ .story-intro-note{margin-top:9px!important;font-size:12.5px!important;line-height:1.55!important;color:#687d82!important}
+ .story-narrative{padding-top:30px;border-top:1px solid #cad9d7;scroll-margin-top:94px}
+ .story-title{font-size:clamp(27px,7.1vw,34px);line-height:1.15;letter-spacing:-.047em;margin:11px 0 11px;color:#263f49}
+ .story-lead{margin:0 0 21px;font-size:15px;line-height:1.66;color:#5a7078}
+ .story-chapters{margin:0;padding:0;list-style:none;display:grid;gap:16px}
+ .story-chapter{position:relative;min-width:0;padding:23px 22px 24px;border:1px solid #d4e1df;border-radius:18px;
+  background:linear-gradient(148deg,#fff,#f7f9f7);box-shadow:0 10px 26px #203d4210}
+ .story-chapter:nth-child(2){background:linear-gradient(145deg,#e8f0ed,#f7faf8)}
+ .story-chapter:nth-child(3){background:linear-gradient(145deg,#eff3f4,#fff)}
+ .story-chapter-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:23px}
+ .story-chapter-number{font-size:12px;font-weight:740;letter-spacing:.1em;color:#6c8289}
+ .story-chapter-art{position:relative;display:block;flex:none;width:48px;height:48px;border-radius:50%;
+  border:1px solid #bdcfcb;background:radial-gradient(circle at 35% 30%,#fff,#e2eeeb);
+  box-shadow:inset 0 1px #ffffffde}
+ .story-chapter-art::before,.story-chapter-art::after{content:"";position:absolute;inset:11px;border-radius:50%;border:1px solid #9ab5b3}
+ .story-chapter-art::after{inset:18px;border-color:#597a81;background:#597a811f}
+ .story-chapter h3{font-size:clamp(23px,5.9vw,29px);font-weight:680;line-height:1.17;
+  letter-spacing:-.043em;color:#233b45;margin:0 0 13px}
+ .story-chapter p{font-size:15.5px;line-height:1.72;color:#4b626b;margin:0;overflow-wrap:anywhere}
+ .story-chapter:nth-child(2) .story-chapter-art{background:linear-gradient(150deg,#dcebe6,#fff)}
+ .story-chapter:nth-child(3) .story-chapter-art{background:linear-gradient(150deg,#dfe9ed,#fff)}
+ .story-ending{margin-top:22px;border-radius:19px;background:radial-gradient(circle at 100% 0%,#456875,#1b333c 70%);padding:25px 22px;color:#edf5f2}
+ .story-ending .story-eyebrow{color:#c9dfd9}
+ .story-ending .story-eyebrow::before{background:#c9dfd9}
+ .story-ending h2{font-size:27px;line-height:1.18;letter-spacing:-.042em;color:white;margin:11px 0}
+ .story-ending p{font-size:15px;line-height:1.6;margin:0 0 19px;color:#d4e1df}
+ .story-ending .story-cta{background:#f5f7f3;color:#213943;border-color:#eff5ef;box-shadow:none}
+ .story-ending .story-cta:hover{background:#e0edeb}
+ .story-extra{margin-top:20px;display:grid;gap:7px}
+ .story-more{min-height:48px;border:1px solid #b0c8c7;border-radius:12px;background:#f7faf7;
+  color:#315965;text-align:center;padding:12px 15px;font-size:14px;font-weight:680;cursor:pointer}
+ .story-more:focus-visible,.story-cta:focus-visible,.story-continue:focus-visible{outline:3px solid #759caa;outline-offset:4px}
+ .story-back{display:inline-flex;align-items:center;gap:7px;min-height:48px;color:#4a6971;text-decoration:underline;text-underline-offset:4px;font-size:13px;font-weight:670}
+ .story-extra small{font-size:12px;color:#61777d;line-height:1.55}
+ body.story-ready:not(.story-details-open) .service-details,
+ body.story-ready:not(.story-details-open) .treatment-journey{display:none!important}
+ .story-service-page .faq-section{padding-top:55px}
+ .story-chapter.is-inview{animation:story-enter .3s ease-out both}
+ @keyframes story-enter{from{opacity:.83;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(max-width:360px){
+ .mobile-treatment-story .story-container{width:calc(100% - 30px)}
+ .story-chapter{padding:20px 17px}
+ .story-intro h2{font-size:29px}
+ .story-ending{padding:22px 18px}
+}
+@media(prefers-reduced-motion:reduce){
+ .story-chapter.is-inview{animation:none!important}
+ .story-cta,.story-more{transition:none}
+}
