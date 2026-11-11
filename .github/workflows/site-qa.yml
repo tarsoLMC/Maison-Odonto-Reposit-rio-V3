@@ -33,6 +33,8 @@ jobs:
         run: python3 scripts/check-minimal-v12.py
       - name: Verificar interações, mensagens e conteúdo da V13
         run: python3 scripts/check-v13.py
+      - name: Validar experiência desktop e abertura Maison V14
+        run: python3 scripts/check-desktop-v14.py
       - name: Confirmar que o gerador reproduz o HTML publicado
         run: git diff --exit-code -- *.html
       - name: Verificar sintaxe do JavaScript
