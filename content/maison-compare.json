@@ -1,0 +1,43 @@
+{
+  "disclaimer": "Informações educativas. Os tratamentos podem se complementar e a indicação depende de avaliação odontológica.",
+  "pairs": [
+    {
+      "id": "reabilitacao",
+      "title": "Implantes e próteses: qual a diferença?",
+      "intro": "Implantes podem servir de suporte a próteses. Não são soluções necessariamente excludentes.",
+      "services": [
+        {
+          "id": "implantes",
+          "title": "Implante dentário",
+          "summary": "Estrutura instalada no osso que pode dar suporte à reposição de dentes.",
+          "detail": "O dentista avalia as condições do osso e da gengiva antes do planejamento."
+        },
+        {
+          "id": "proteses",
+          "title": "Prótese dentária",
+          "summary": "Soluções fixas ou removíveis para repor ou restaurar dentes.",
+          "detail": "O tipo de prótese depende das condições bucais e das necessidades da pessoa."
+        }
+      ]
+    },
+    {
+      "id": "estetica",
+      "title": "Clareamento ou lentes: o que muda?",
+      "intro": "Os dois procedimentos têm objetivos e cuidados diferentes.",
+      "services": [
+        {
+          "id": "clareamento",
+          "title": "Clareamento dentário",
+          "summary": "Busca clarear dentes naturais com acompanhamento profissional.",
+          "detail": "Coroas, lentes e restaurações não clareiam da mesma forma que dentes naturais."
+        },
+        {
+          "id": "lentes",
+          "title": "Lentes de contato dentais",
+          "summary": "Lâminas finas aplicadas à frente dos dentes para planejar mudanças de forma, cor e proporção.",
+          "detail": "O preparo varia conforme o caso e pode envolver alterações irreversíveis do esmalte."
+        }
+      ]
+    }
+  ]
+}
