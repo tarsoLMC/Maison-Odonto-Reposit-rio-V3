@@ -1,0 +1,85 @@
+/* Maison V10 · Jornada guiada exclusivamente para celular.
+   Se o JavaScript não executar, a página V9 permanece totalmente disponível. */
+.mobile-care-wizard{display:none}
+@media (max-width:720px){
+ body.mobile-care-active .page-hero,
+ body.mobile-care-active #tratamentos,
+ body.mobile-care-active .plans-section,
+ body.mobile-care-active .faq-section,
+ body.mobile-care-active .final-cta{display:none!important}
+ body.mobile-care-active .mobile-care-wizard{display:block}
+ body.mobile-care-active #conteudo{min-height:calc(100svh - 78px)}
+ body.mobile-care-active .mobile-contact{z-index:80}
+ .mobile-care-wizard{
+   --wiz-ink:#213842;--wiz-muted:#63777f;--wiz-line:#d9e4e4;
+   position:relative;isolation:isolate;overflow:hidden;
+   background:radial-gradient(circle at 98% 2%,#c4d8d5aa,transparent 46%),
+              linear-gradient(152deg,#f8f9f6 0%,#edf2f0 72%,#e5efef 100%);
+   color:var(--wiz-ink);
+   padding:22px clamp(16px,5vw,25px) calc(126px + env(safe-area-inset-bottom,0px));
+   min-height:calc(100svh - 78px);
+   scroll-margin-top:78px;
+ }
+ .mobile-care-wizard::before{
+   content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+   opacity:.14;
+   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.38' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.1'/%3E%3C/svg%3E");
+ }
+ .mobile-care-inner{max-width:540px;margin:0 auto}
+ .mobile-care-eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:760;letter-spacing:.15em;color:#58717d;text-transform:uppercase}
+ .mobile-care-eyebrow::before{content:"";width:21px;height:1px;background:#74919a}
+ .mobile-care-progress-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0 12px}
+ .mobile-care-progress-label{font-size:12px;font-weight:680;color:#607982}
+ .mobile-care-progress-track{height:4px;border-radius:20px;background:#d4e0df;overflow:hidden;margin-bottom:27px}
+ .mobile-care-progress-fill{display:block;width:50%;height:100%;border-radius:20px;background:linear-gradient(90deg,#526e77,#96b3ac);transition:width .24s ease}
+ .mobile-care-wizard[data-step="2"] .mobile-care-progress-fill{width:100%}
+ .mobile-care-wizard [hidden]{display:none!important}
+ .mobile-care-title{font-size:clamp(30px,8.5vw,41px);font-weight:690;line-height:1.12;letter-spacing:-.058em;color:#1d343f;margin:0 0 14px}
+ .mobile-care-title em{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.035em;color:#527078}
+ .mobile-care-support{font-size:15.5px;line-height:1.7;color:#536b74;margin:0 0 24px;max-width:46ch}
+ .mobile-care-choices,.mobile-care-service-list{display:grid;grid-template-columns:minmax(0,1fr);gap:11px}
+ .mobile-care-option,.mobile-care-service{
+   width:100%;display:flex;align-items:center;text-align:left;gap:15px;
+   padding:15px 15px;background:#fff;border:1px solid #d2dddd;border-radius:16px;
+   box-shadow:0 8px 20px #1c3f4810;text-decoration:none;color:#213944;
+   min-height:86px;transition:border-color .18s,box-shadow .18s,transform .18s;
+ }
+ .mobile-care-option{cursor:pointer;font:inherit;appearance:none}
+ .mobile-care-option:hover,.mobile-care-service:hover{border-color:#91adae;box-shadow:0 13px 26px #1c3f4820;transform:translateY(-1px)}
+ .mobile-care-option:active,.mobile-care-service:active{transform:scale(.991)}
+ .mobile-care-option:focus-visible,.mobile-care-service:focus-visible,.mobile-care-back:focus-visible,.mobile-care-plain:focus-visible{
+   outline:3px solid #537f91;outline-offset:3px
+ }
+ .mobile-care-symbol{
+   flex:0 0 48px;display:grid;place-items:center;width:48px;height:48px;border-radius:14px;
+   background:linear-gradient(150deg,#e5edeb,#eff4f1);border:1px solid #d7e4e1;color:#4e7680
+ }
+ .mobile-care-symbol svg{display:block;width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+ .mobile-care-option-copy,.mobile-care-service-copy{display:flex;flex-direction:column;flex:1;min-width:0;gap:4px}
+ .mobile-care-option-copy strong,.mobile-care-service-copy strong{font-size:16px;font-weight:690;letter-spacing:-.025em;line-height:1.35}
+ .mobile-care-option-copy small,.mobile-care-service-copy small{font-size:12.5px;line-height:1.48;color:#6a7c84}
+ .mobile-care-arrow{flex:0 0 17px;width:17px;height:17px;stroke:#76909a;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+ .mobile-care-back{display:inline-flex;align-items:center;gap:7px;padding:10px 2px;border:0;background:transparent;font-family:inherit;font-size:14px;font-weight:600;color:#4b6c75;cursor:pointer;margin:-1px 0 20px}
+ .mobile-care-back svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
+ .mobile-care-kicker{font-size:11px;font-weight:730;color:#5c7880;letter-spacing:.13em;text-transform:uppercase;margin:0 0 12px}
+ .mobile-care-service{min-height:91px;background:#fff}
+ .mobile-care-service .mobile-care-symbol{background:#eef3f3}
+ .mobile-care-foot{border-top:1px solid #cedcdb;margin-top:24px;padding-top:18px;display:grid;gap:12px}
+ .mobile-care-plain{font-size:13.5px;font-weight:690;color:#345b65;background:transparent;border:0;padding:11px 0;text-align:left;cursor:pointer;text-underline-offset:4px;text-decoration:underline}
+ .mobile-care-help{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;padding:12px 15px;border:1px solid #afc3c4;border-radius:13px;background:#e8f0ef;color:#24414c;text-decoration:none;font-weight:690;font-size:14px}
+ .mobile-care-note{font-size:12px;line-height:1.55;color:#677c80;margin:4px 0 0}
+ .mobile-care-wizard[data-step="2"] .mobile-care-step[data-step-panel="2"]{animation:mobile-care-enter .22s ease-out both}
+ @keyframes mobile-care-enter{from{opacity:.65;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+}
+@media (max-width:360px){
+ .mobile-care-wizard{padding-inline:15px}
+ .mobile-care-option,.mobile-care-service{padding:13px 11px;gap:12px}
+ .mobile-care-symbol{flex-basis:43px;width:43px;height:43px;border-radius:12px}
+ .mobile-care-symbol svg{width:23px;height:23px}
+ .mobile-care-option-copy strong,.mobile-care-service-copy strong{font-size:15.5px}
+}
+@media (prefers-reduced-motion:reduce){
+ .mobile-care-option,.mobile-care-service,.mobile-care-progress-fill{transition:none}
+ .mobile-care-option:hover,.mobile-care-service:hover,.mobile-care-option:active,.mobile-care-service:active{transform:none}
+ .mobile-care-wizard[data-step="2"] .mobile-care-step[data-step-panel="2"]{animation:none}
+}
