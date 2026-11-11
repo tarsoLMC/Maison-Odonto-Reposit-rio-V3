@@ -130,7 +130,7 @@ def story_comparison(s):
  pair=next((p for p in COMPARE['pairs'] if s['id'] in [x['id'] for x in p['services']]),None)
  if not pair:return ''
  values=sorted(pair['services'],key=lambda x:0 if x['id']==s['id'] else 1)
- tabs=''.join(f'''<button type="button" class="story-compare-tab" data-compare-tab="{x["id"]}" aria-controls="compare-{x["id"]}">{esc(x["title"])}</button>''' for x in values)
+ tabs=''.join(f'''<button type="button" class="story-compare-tab" id="compare-tab-{x["id"]}" data-compare-tab="{x["id"]}" aria-controls="compare-{x["id"]}">{esc(x["title"])}</button>''' for x in values)
  panels=''.join(f'''<div class="story-compare-panel" data-compare-panel="{x["id"]}" id="compare-{x["id"]}" aria-labelledby="compare-tab-{x["id"]}"><h3>{esc(x["title"])}</h3><p>{esc(x["summary"])}</p><p>{esc(x["detail"])}</p><a href="{next(z["slug"] for z in services if z["id"]==x["id"])}.html">Conhecer o tratamento {icon("arrow")}</a></div>''' for x in values)
  return f'''<details class="story-compare" data-care-compare><summary>{esc(pair["title"])}{icon("chevron")}</summary><div class="story-compare-body"><p class="story-compare-explain">{esc(pair["intro"])}</p><div class="story-compare-tabs" data-compare-tabs>{tabs}</div><div class="story-compare-panels">{panels}</div><p class="story-compare-note">{esc(COMPARE["disclaimer"])}</p></div></details>'''
 
