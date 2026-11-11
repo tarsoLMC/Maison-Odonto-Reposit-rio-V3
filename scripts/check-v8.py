@@ -44,11 +44,17 @@ for p in html:
   assert 'Agendar avaliação' in s,p.name
   assert 'class="faq-list"' in s,p.name
  if p.name=='especialidades.html':
-  assert s.count('class="care-path"')==4
   assert s.count('class="service-card"')==7
   assert s.count('class="service-card service-card-consult"')==1
-  for anchor in ['implantes','proteses','invisalign','lentes','clareamento','cirurgia','harmonizacao']:
-   assert f'href="#{anchor}"' in s and anchor in i.ids,anchor
+  if 'data-maison-concierge' in s:
+   assert s.count('data-concierge-tab=')==4
+   assert s.count('data-concierge-panel=')==4
+   for anchor in ['implantes','proteses','invisalign','lentes','clareamento','cirurgia','harmonizacao']:
+    assert anchor in i.ids,anchor
+  else:
+   assert s.count('class="care-path"')==4
+   for anchor in ['implantes','proteses','invisalign','lentes','clareamento','cirurgia','harmonizacao']:
+    assert f'href="#{anchor}"' in s and anchor in i.ids,anchor
 lens=(ROOT/'lentes-de-contato-dental.html').read_text()
 faq=lens.split('class="faq-list"',1)[1].split('</div>',1)[0]
 assert faq.count('<details>')==3
