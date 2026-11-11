@@ -441,6 +441,20 @@
           "title": "Cuidar do resultado",
           "text": "Após a instalação, higiene, revisão da mordida e consultas de manutenção continuam importantes."
         }
+      ],
+      "faqs": [
+        {
+          "question": "Como saber se lentes de contato dentais são indicadas para mim?",
+          "answer": "O planejamento começa com uma avaliação da saúde dos dentes e gengivas, das suas expectativas e das alternativas disponíveis. Nem todos os casos exigem lentes."
+        },
+        {
+          "question": "Clareamento e alinhamento também podem ser considerados?",
+          "answer": "Dependendo da avaliação, o profissional pode conversar sobre alternativas, como clareamento ou alinhamento, antes de definir um plano."
+        },
+        {
+          "question": "Como são definidos os cuidados após o procedimento?",
+          "answer": "As orientações de higiene, alimentação e acompanhamento são individualizadas e explicadas durante o atendimento."
+        }
       ]
     }
   ],
