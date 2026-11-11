@@ -52,8 +52,14 @@ for p in (ROOT/'assets/css').glob('maison.css'):
 home=(ROOT/'index.html').read_text()
 assert home.index('</main>')<home.index('id="opening"')
 assert '#conteudo:target~#opening{display:none}' in home
-assert 'maison-opening-exit 2.25s both' in home
+assert 'maison-opening-exit 2.3s both' in home
 assert '100%{opacity:0;visibility:hidden;pointer-events:none}' in home
-assert 'href="#conteudo">Entrar direto' in home
+assert 'href="#conteudo" class="opening-skip">Entrar direto' in home
 assert 'body.style.overflow' not in (ROOT/'assets/js/maison.js').read_text()
 print(json.dumps({'pages':len(pages),'local_references':refs,'whatsapp_links':whatsapp,'result':'PASS'},ensure_ascii=False))
+
+assert len(pages)==13
+assert home.count('data-gallery data-caption')==10
+assert home.count('class="plan-logo"')==5
+assert home.count('class="service-card"')==7
+assert '3204-3436' not in home

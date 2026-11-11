@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Facilitar três decisões: reconhecer a clínica, compreender uma especialidade e iniciar uma conversa para agendamento. A composição usa a marca oficial, verde profundo, marfim, areia, tipografia editorial e textura discreta. A entrada é curta e possui saída independente de JavaScript.
+Facilitar três decisões: reconhecer a clínica, compreender uma especialidade e iniciar uma conversa para agendamento. A composição usa a marca oficial, verde profundo, marfim, areia, tipografia Inter sem serifa, textura visível de grão e linhas. A entrada é curta e possui saída independente de JavaScript.
 
 A experiência reúne decisões dos projetos anteriores: presença institucional da Saluvia, comunicação acolhedora da Essenes, contato direto e clareza local do Habite-se, navegação organizada e tratamento consistente dos serviços. Não se importam ofertas, dados ou promessas de outros negócios.
 
@@ -15,6 +15,7 @@ Estas são hipóteses editoriais de busca, não dados de volume ou concorrência
 | `index.html` | dentista na Asa Sul; clínica odontológica em Brasília | Conhecer a Maison e agendar |
 | `especialidades.html` | especialidades odontológicas na Asa Sul | Comparar áreas de atendimento |
 | `implantes-dentarios.html` | implantes dentários na Asa Sul; implante dentário em Brasília | Entender a possibilidade de reabilitação |
+| `cirurgia-dentaria.html` | cirurgia dentária na Asa Sul | Conhecer o cuidado cirúrgico e agendar avaliação |
 | `invisalign.html` | Invisalign na Asa Sul; alinhadores transparentes em Brasília | Conhecer a opção de alinhamento |
 | `lentes-de-contato-dental.html` | lentes de contato dental na Asa Sul | Conversar sobre estética do sorriso |
 | `clareamento-dental.html` | clareamento dental em Brasília; clareamento dentário na Asa Sul | Consultar avaliação para clareamento |
@@ -29,15 +30,21 @@ Estas são hipóteses editoriais de busca, não dados de volume ou concorrência
 - Títulos e descrições individuais, um H1 por página, hierarquia de subtítulos e links para serviços relacionados.
 - Dados estruturados `Dentist` e `BreadcrumbList`, com fatos de contato da clínica; sem avaliações, notas, preços ou credenciais inventados.
 - Fotografias com texto alternativo e dimensões; imagem principal prioritária e secundárias carregadas sob demanda.
-- Fontes locais, CSS/JS versionados, imagens WebP em duas larguras e ícones SVG.
+- Fontes locais, CSS/JS versionados, imagens WebP e ícones SVG.
 - WhatsApp direto com mensagem relacionada ao assunto. Sem formulário ou coleta de dados de saúde no site.
 - Menu móvel nativo, perguntas frequentes nativas, suporte a movimento reduzido e áreas de toque adequadas.
-- Horário baseado na arte fornecida no projeto, sujeito a confirmação pela clínica.
+- Horário conforme a referência Vercel indicada pelo usuário: segunda a sexta, 8h–12h e 13h–18h.
 - Canonical e Open Graph usam o endereço temporário atual. Na produção, atualizar para o domínio escolhido e liberar indexação após validação. O sitemap é preparado, mas não autoriza indexação da homologação.
 
 ## Referências consultadas
 
-Dados da clínica e lista de tratamentos:
+Fonte principal de conteúdo da V5, indicada e autorizada pelo usuário:
+
+- https://maison-odontologia-brasilia.vercel.app/
+
+Referências visuais: https://gruposaluvia.com.br/ e https://gorgonoid.com/.
+
+Fontes usadas na versão anterior:
 
 - https://maisonodonto.com.br/
 - https://maisonodonto.com.br/implante-dentario/

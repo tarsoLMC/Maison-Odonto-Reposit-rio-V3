@@ -1,0 +1,578 @@
+{
+  "source": "https://maison-odontologia-brasilia.vercel.app/",
+  "retrieved_date_utc": "2026-11-11",
+  "identity": {
+    "brand": "Maison Odontologia Especializada",
+    "legal_name": "JLMR Odontologia Especializada Ltda.",
+    "cnpj": "44.584.328/0001-78",
+    "opened": "dezembro de 2021",
+    "location": "Asa Sul, Brasília"
+  },
+  "contacts": {
+    "whatsapp_number": "+55 61 99143-4312",
+    "whatsapp_link": "https://wa.me/5561991434312",
+    "phone_number": "+55 61 99599-1116",
+    "phone_label": "(61) 99599-1116",
+    "phone_href": "tel:+5561995991116",
+    "email": "atendimento@maisonodonto.com",
+    "instagram": "https://www.instagram.com/maisonod/",
+    "instagram_presentation": "https://www.instagram.com/maisonod/p/DBZYqyhp9SQ/"
+  },
+  "address": {
+    "building": "Centro Clínico Advance",
+    "room": "Sala 41, 2º subsolo",
+    "street": "SGAS 915, lote 69/70, Asa Sul",
+    "city": "Brasília",
+    "state": "DF",
+    "postal_code": "70390-150",
+    "full": "Centro Clínico Advance · Sala 41, 2º subsolo, SGAS 915, lote 69/70, Asa Sul, Brasília – DF, 70390-150",
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Maison%20Odontologia%20Especializada%2C%20SGAS%20915%2C%20Centro%20Cl%C3%ADnico%20Advance%2C%20Asa%20Sul%2C%20Bras%C3%ADlia%20-%20DF",
+    "map_embed": "https://maps.google.com/maps?q=Maison%20Odontologia%20Especializada%2C%20SGAS%20915%2C%20Centro%20Cl%C3%ADnico%20Advance%2C%20Asa%20Sul%2C%20Bras%C3%ADlia%20-%20DF&z=16&output=embed"
+  },
+  "hours": {
+    "text": "Segunda a sexta, das 8h às 12h e das 13h às 18h.",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "intervals": [
+      [
+        "08:00",
+        "12:00"
+      ],
+      [
+        "13:00",
+        "18:00"
+      ]
+    ]
+  },
+  "plans": [
+    {
+      "name": "Life Empresarial Saúde",
+      "asset_path": "assets/plan-life.webp",
+      "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-life.webp"
+    },
+    {
+      "name": "MetLife",
+      "asset_path": "assets/plan-metlife.webp",
+      "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-metlife.webp"
+    },
+    {
+      "name": "INPAO Dental",
+      "asset_path": "assets/plan-inpao.webp",
+      "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-inpao.webp"
+    },
+    {
+      "name": "Rede Odonto Empresas",
+      "asset_path": "assets/plan-odontoempresas.webp",
+      "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-odontoempresas.webp"
+    },
+    {
+      "name": "Amil",
+      "asset_path": "assets/plan-amil.webp",
+      "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-amil.webp"
+    }
+  ],
+  "plan_coverage_message": "Consulte nossa equipe para confirmar a cobertura do seu plano.",
+  "services": [
+    {
+      "name": "Cirurgia dentária",
+      "route": "/especialidades/cirurgia-dentaria.html",
+      "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/cirurgia-dentaria.html",
+      "intro": "A cirurgia dentária reúne intervenções na boca, nos dentes e nas gengivas. A indicação depende do problema identificado na avaliação odontológica.",
+      "sections": [
+        {
+          "heading": "Como funciona",
+          "text": "A técnica varia conforme a finalidade. Uma extração, por exemplo, pode ser simples quando o dente está visível ou exigir uma abordagem cirúrgica quando ele permanece abaixo da gengiva. Implantes e determinadas intervenções nas gengivas também são exemplos de procedimentos cirúrgicos. A complexidade ajuda a definir o local do atendimento e a abordagem anestésica."
+        },
+        {
+          "heading": "Principais benefícios",
+          "text": "Tratar dentes comprometidos quando a remoção é indicada. Atender a necessidades específicas de saúde bucal ou preparar a reabilitação, conforme o procedimento."
+        },
+        {
+          "heading": "O que saber antes da consulta",
+          "text": "Siga as orientações da equipe sobre preparo, alimentação e cuidados com a região operada. As instruções variam de acordo com o procedimento."
+        },
+        {
+          "heading": "Perguntas frequentes",
+          "text": "Toda extração é igual? A abordagem depende da posição e da condição do dente. A avaliação orienta a escolha da técnica. Como é definida a anestesia? O profissional considera a complexidade do procedimento e as necessidades do paciente."
+        },
+        {
+          "heading": "Agende sua avaliação na Asa Sul",
+          "text": "Agendar pelo WhatsApp ↗ Voltar à página inicial Base editorial artigo original da Maison ."
+        }
+      ],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-cirurgia.webp",
+      "faqs": [
+        {
+          "question": "Toda extração é igual?",
+          "answer": "A abordagem depende da posição e da condição do dente. A avaliação orienta a escolha da técnica."
+        },
+        {
+          "question": "Como é definida a anestesia?",
+          "answer": "O profissional considera a complexidade do procedimento e as necessidades do paciente."
+        }
+      ]
+    },
+    {
+      "name": "Clareamento dentário",
+      "route": "/especialidades/clareamento-dentario.html",
+      "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/clareamento-dentario.html",
+      "intro": "O clareamento dentário busca reduzir alterações na cor dos dentes. Idade, tabaco e bebidas ou alimentos pigmentados estão entre os fatores que podem influenciar a tonalidade.",
+      "sections": [
+        {
+          "heading": "Como funciona",
+          "text": "No consultório, o dentista aplica um gel clareador e acompanha a sessão. Na modalidade caseira supervisionada, o profissional prepara uma moldeira sob medida e orienta o uso do gel em casa. A escolha da modalidade e o número de sessões dependem da avaliação da saúde bucal e da alteração de cor."
+        },
+        {
+          "heading": "Principais benefícios",
+          "text": "Suavizar manchas e descolorações nos dentes. Escolher, com o dentista, uma modalidade compatível com o caso e com a rotina do paciente."
+        },
+        {
+          "heading": "O que saber antes da consulta",
+          "text": "Antes de iniciar, o dentista avalia se o clareamento é indicado. O efeito pode mudar com o tempo, e a necessidade de retoques deve ser discutida em consulta."
+        },
+        {
+          "heading": "Perguntas frequentes",
+          "text": "O clareamento caseiro pode ser supervisionado? Sim. O dentista prepara a moldeira e orienta a aplicação do gel e o período de uso. O resultado é permanente? A tonalidade pode mudar ao longo do tempo. O dentista pode avaliar se há indicação de retoque."
+        },
+        {
+          "heading": "Agende sua avaliação na Asa Sul",
+          "text": "Agendar pelo WhatsApp ↗ Voltar à página inicial Base editorial artigo original da Maison ."
+        }
+      ],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-clareamento.webp",
+      "faqs": [
+        {
+          "question": "O clareamento caseiro pode ser supervisionado?",
+          "answer": "Sim. O dentista prepara a moldeira e orienta a aplicação do gel e o período de uso."
+        },
+        {
+          "question": "O resultado é permanente?",
+          "answer": "A tonalidade pode mudar ao longo do tempo. O dentista pode avaliar se há indicação de retoque."
+        }
+      ]
+    },
+    {
+      "name": "Harmonização facial",
+      "route": "/especialidades/harmonizacao-facial.html",
+      "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/harmonizacao-facial.html",
+      "intro": "A harmonização facial reúne técnicas estéticas voltadas ao equilíbrio das proporções do rosto. O planejamento considera a anatomia, os objetivos e as necessidades de cada pessoa.",
+      "sections": [
+        {
+          "heading": "Como funciona",
+          "text": "Na consulta, o profissional avalia o rosto e conversa com o paciente sobre as mudanças desejadas. Técnicas como preenchimento facial e aplicação de toxina botulínica têm finalidades diferentes e podem ser consideradas conforme a indicação. O plano define quais regiões serão avaliadas e quais procedimentos fazem sentido para o caso."
+        },
+        {
+          "heading": "Principais benefícios",
+          "text": "Trabalhar proporções de regiões específicas do rosto. Planejar as intervenções de acordo com as características e os objetivos do paciente."
+        },
+        {
+          "heading": "O que saber antes da consulta",
+          "text": "Converse com um profissional qualificado sobre as opções e o resultado que é possível esperar para o seu caso antes de decidir."
+        },
+        {
+          "heading": "Perguntas frequentes",
+          "text": "O tratamento segue o mesmo plano para todos? Cada plano considera a anatomia e os objetivos individuais. A avaliação define as técnicas indicadas."
+        },
+        {
+          "heading": "Agende sua avaliação na Asa Sul",
+          "text": "Agendar pelo WhatsApp ↗ Voltar à página inicial Base editorial artigo original da Maison ."
+        }
+      ],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-harmonizacao.webp",
+      "faqs": [
+        {
+          "question": "O tratamento segue o mesmo plano para todos?",
+          "answer": "Cada plano considera a anatomia e os objetivos individuais. A avaliação define as técnicas indicadas."
+        }
+      ]
+    },
+    {
+      "name": "Implante dentário",
+      "route": "/especialidades/implante-dentario.html",
+      "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/implante-dentario.html",
+      "intro": "O implante dentário substitui a raiz de um dente perdido. Uma estrutura de titânio é instalada no osso para dar suporte a uma prótese.",
+      "sections": [
+        {
+          "heading": "Como funciona",
+          "text": "O dentista avalia as condições do osso e da gengiva antes de planejar a instalação. Após a colocação, ocorre a osseointegração, período em que o implante se integra ao osso. A prótese, como uma coroa ou ponte, é ajustada de acordo com o planejamento e a evolução da cicatrização."
+        },
+        {
+          "heading": "Principais benefícios",
+          "text": "Dar suporte à reposição de um ou mais dentes. Ajudar a recuperar a mastigação e, conforme o caso, a fala e a aparência do sorriso."
+        },
+        {
+          "heading": "O que saber antes da consulta",
+          "text": "A cicatrização varia de pessoa para pessoa. Higiene, retorno às consultas e cuidados orientados pela equipe ajudam no acompanhamento do implante."
+        },
+        {
+          "heading": "Perguntas frequentes",
+          "text": "Pode haver desconforto depois do procedimento? Pode haver dor ou inchaço após a cirurgia. A equipe explica como cuidar da região e orienta o controle do desconforto. Implante e prótese são a mesma coisa? O implante funciona como suporte no osso. A prótese é a parte que repõe o dente na boca."
+        },
+        {
+          "heading": "Agende sua avaliação na Asa Sul",
+          "text": "Agendar pelo WhatsApp ↗ Voltar à página inicial Base editorial artigo original da Maison ."
+        }
+      ],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-implantes.webp",
+      "faqs": [
+        {
+          "question": "Pode haver desconforto depois do procedimento?",
+          "answer": "Pode haver dor ou inchaço após a cirurgia. A equipe explica como cuidar da região e orienta o controle do desconforto."
+        },
+        {
+          "question": "Implante e prótese são a mesma coisa?",
+          "answer": "O implante funciona como suporte no osso. A prótese é a parte que repõe o dente na boca."
+        }
+      ]
+    },
+    {
+      "name": "Invisalign®",
+      "route": "/especialidades/invisalign.html",
+      "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/invisalign.html",
+      "intro": "Invisalign® é um sistema ortodôntico de alinhadores transparentes e removíveis. A avaliação identifica se eles são adequados para corrigir a posição dos dentes e tratar alterações da mordida.",
+      "sections": [
+        {
+          "heading": "Como funciona",
+          "text": "O ortodontista avalia o caso e pode usar escaneamento digital para planejar os movimentos. A partir desse planejamento, são produzidos alinhadores personalizados. Os alinhadores são usados em sequência. A equipe orienta as trocas e acompanha o progresso em consultas. Ao final, pode indicar contenção para ajudar a manter a posição dos dentes."
+        },
+        {
+          "heading": "Principais benefícios",
+          "text": "Alinhadores transparentes e discretos. Possibilidade de retirar os alinhadores para comer e fazer a higiene bucal."
+        },
+        {
+          "heading": "O que saber antes da consulta",
+          "text": "O uso conforme a orientação profissional e as consultas de acompanhamento fazem parte do tratamento. A indicação e o cronograma variam de acordo com a complexidade do caso."
+        },
+        {
+          "heading": "Perguntas frequentes",
+          "text": "Posso tirar os alinhadores para comer? Sim. Eles são removíveis durante as refeições e a higiene. Siga o tempo de uso orientado pelo ortodontista. Serve para todos os casos? A escolha depende do tipo e da complexidade da correção. A avaliação define a abordagem adequada."
+        },
+        {
+          "heading": "Agende sua avaliação na Asa Sul",
+          "text": "Agendar pelo WhatsApp ↗ Voltar à página inicial Base editorial artigo original da Maison ."
+        }
+      ],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-invisalign.webp",
+      "faqs": [
+        {
+          "question": "Posso tirar os alinhadores para comer?",
+          "answer": "Sim. Eles são removíveis durante as refeições e a higiene. Siga o tempo de uso orientado pelo ortodontista."
+        },
+        {
+          "question": "Serve para todos os casos?",
+          "answer": "A escolha depende do tipo e da complexidade da correção. A avaliação define a abordagem adequada."
+        }
+      ]
+    },
+    {
+      "name": "Prótese dentária",
+      "route": "/especialidades/protese-dentaria.html",
+      "url": "https://maison-odontologia-brasilia.vercel.app/especialidades/protese-dentaria.html",
+      "intro": "A prótese dentária pode repor dentes ausentes ou restaurar dentes danificados. A escolha entre opções fixas e removíveis depende das condições da boca e dos objetivos do tratamento.",
+      "sections": [
+        {
+          "heading": "Como funciona",
+          "text": "O dentista avalia quantos dentes precisam ser repostos, onde estão e como está a saúde bucal. Entre as opções estão coroas, pontes fixas, próteses parciais removíveis e próteses totais. O material e o formato são definidos de acordo com o tipo de prótese indicado."
+        },
+        {
+          "heading": "Principais benefícios",
+          "text": "Ajudar a recuperar a mastigação e a fala, conforme o caso. Restabelecer a aparência do sorriso após a perda ou o dano a dentes."
+        },
+        {
+          "heading": "O que saber antes da consulta",
+          "text": "A prótese precisa de higiene e manutenção. Peça orientações de limpeza específicas para o seu modelo e mantenha o acompanhamento com o dentista."
+        },
+        {
+          "heading": "Perguntas frequentes",
+          "text": "Qual é a diferença entre prótese fixa e removível? A fixa permanece instalada na boca. A removível pode ser retirada para os cuidados de rotina. Como saber qual prótese é adequada? O dentista considera a localização dos dentes ausentes ou danificados e a condição geral da boca."
+        },
+        {
+          "heading": "Agende sua avaliação na Asa Sul",
+          "text": "Agendar pelo WhatsApp ↗ Voltar à página inicial Base editorial artigo original da Maison ."
+        }
+      ],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-protese.webp",
+      "faqs": [
+        {
+          "question": "Qual é a diferença entre prótese fixa e removível?",
+          "answer": "A fixa permanece instalada na boca. A removível pode ser retirada para os cuidados de rotina."
+        },
+        {
+          "question": "Como saber qual prótese é adequada?",
+          "answer": "O dentista considera a localização dos dentes ausentes ou danificados e a condição geral da boca."
+        }
+      ]
+    },
+    {
+      "name": "Lentes de contato dentais",
+      "route": null,
+      "url": null,
+      "intro": "Planejamento estético para avaliar mudanças na forma, na cor e nas proporções dos dentes.",
+      "sections": [],
+      "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-lentes.webp",
+      "cta": "https://wa.me/5561991434312?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Lentes%20de%20contato%20dentais."
+    }
+  ],
+  "business_differentiators": [
+    {
+      "name": "Multidisciplinaridade",
+      "claim": "A clínica reúne diferentes áreas da odontologia no mesmo endereço."
+    },
+    {
+      "name": "Planejamento individual",
+      "claim": "A avaliação orienta a escolha do tratamento, levando em conta as necessidades e os objetivos de cada pessoa."
+    },
+    {
+      "name": "Transparência",
+      "claim": "A equipe valoriza a transparência e reserva espaço para você tirar dúvidas sobre o tratamento."
+    },
+    {
+      "name": "Sedação consciente",
+      "claim": "Possibilidade de sedação consciente em tratamentos com implantes, conforme avaliação profissional."
+    }
+  ],
+  "mission": "Oferecer atendimento odontológico de excelência, com cuidado individualizado, conforto e confiança em cada etapa do tratamento.",
+  "vision": "Ser referência em odontologia pela qualidade dos tratamentos e pela adoção de técnicas atualizadas para cuidar da saúde bucal.",
+  "values": [
+    "Compromisso e respeito com o paciente",
+    "Transparência nas relações",
+    "Confidencialidade e ética",
+    "Atendimento humanizado e gentil",
+    "Foco em resultados"
+  ],
+  "reviews": {
+    "rating": 4.9,
+    "count": 186,
+    "platform": "Google",
+    "profile_link": "https://share.google/kGlUzJOM2j24OXxMI",
+    "all_reviews_link": "https://search.google.com/local/reviews?ludocid=7965416693532771631",
+    "items": [
+      {
+        "name": "Jaqueline Silva",
+        "rating": 5,
+        "summary": "Acolhimento desde a recepção e confiança já na primeira visita.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Vanessa Ramos",
+        "rating": 5,
+        "summary": "Destaca o acolhimento, a limpeza e a organização da clínica.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Laura",
+        "rating": 5,
+        "summary": "Valoriza a experiência do atendimento ao pós-operatório.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Valdecir Simao",
+        "rating": 5,
+        "summary": "Elogia o atendimento e a qualidade dos profissionais.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Antonio Gomes",
+        "rating": 5,
+        "summary": "Relata uma experiência muito positiva com a clínica.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Ana Carolina Lucena",
+        "rating": 5,
+        "summary": "Destaca o atendimento diferenciado e o ambiente acolhedor.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Erica Sousa",
+        "rating": 5,
+        "summary": "Elogia a estrutura, a limpeza e o atendimento dos profissionais.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Mayara Melo",
+        "rating": 5,
+        "summary": "Conta que a equipe ajudou a tornar a consulta mais tranquila.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Iasmim Lessa",
+        "rating": 5,
+        "summary": "Destaca a disponibilidade da equipe e a confiança no atendimento.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Rayane Pereira Silva",
+        "rating": 5,
+        "summary": "Relata boas experiências recorrentes com a clínica.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "Roberto Teles Garcia",
+        "rating": 5,
+        "summary": "Valoriza a tranquilidade do ambiente e a confiança desde a recepção.",
+        "source_label": "Resumo de avaliação pública no Google"
+      },
+      {
+        "name": "João Pedro Cardoso Mattos",
+        "rating": 5,
+        "summary": "Destaca a boa recepção de toda a equipe desde o primeiro atendimento.",
+        "source_label": "Resumo de avaliação pública no Google"
+      }
+    ],
+    "scope": "Score and excerpts are as presented by the user-approved reference site, not independently refreshed from Google."
+  },
+  "gallery": {
+    "image_count": 10,
+    "real_clinic_photo": "assets/clinica.webp",
+    "other_images_source_labels": "Imagem ilustrativa",
+    "assets": [
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/logo.webp",
+        "path": "assets/logo.webp",
+        "alt": "Maison Odontologia Especializada"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/clinica.webp",
+        "path": "assets/clinica.webp",
+        "alt": "Profissional da Maison à mesa de consulta da clínica"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-implantes.webp",
+        "path": "assets/tratamento-implantes.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-protese.webp",
+        "path": "assets/tratamento-protese.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-invisalign.webp",
+        "path": "assets/tratamento-invisalign.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-lentes.webp",
+        "path": "assets/tratamento-lentes.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-cirurgia.webp",
+        "path": "assets/tratamento-cirurgia.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-clareamento.webp",
+        "path": "assets/tratamento-clareamento.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-harmonizacao.webp",
+        "path": "assets/tratamento-harmonizacao.webp",
+        "alt": ""
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-life.webp",
+        "path": "assets/plan-life.webp",
+        "alt": "Life Empresarial Saúde"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-metlife.webp",
+        "path": "assets/plan-metlife.webp",
+        "alt": "MetLife"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-inpao.webp",
+        "path": "assets/plan-inpao.webp",
+        "alt": "INPAO Dental"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-odontoempresas.webp",
+        "path": "assets/plan-odontoempresas.webp",
+        "alt": "Rede Odonto Empresas"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/plan-amil.webp",
+        "path": "assets/plan-amil.webp",
+        "alt": "Amil"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/galeria-maison-1.webp",
+        "path": "assets/galeria-maison-1.webp",
+        "alt": "Consulta odontológica"
+      },
+      {
+        "url": "https://maison-odontologia-brasilia.vercel.app/assets/galeria-maison-2.webp",
+        "path": "assets/galeria-maison-2.webp",
+        "alt": "Cuidados odontológicos"
+      }
+    ],
+    "items": [
+      {
+        "title": "Consultório da Maison",
+        "source_label": "Foto da clínica",
+        "asset_path": "assets/clinica.webp"
+      },
+      {
+        "title": "Consulta odontológica",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/galeria-maison-1.webp"
+      },
+      {
+        "title": "Modelo de prótese dentária",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-protese.webp"
+      },
+      {
+        "title": "Estética do sorriso",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-lentes.webp"
+      },
+      {
+        "title": "Escala de tonalidades dentárias",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-clareamento.webp"
+      },
+      {
+        "title": "Avaliação do sorriso",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-invisalign.webp"
+      },
+      {
+        "title": "Ambiente de atendimento odontológico",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-cirurgia.webp"
+      },
+      {
+        "title": "Avaliação odontológica",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-implantes.webp"
+      },
+      {
+        "title": "Cuidados odontológicos",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/galeria-maison-2.webp"
+      },
+      {
+        "title": "Harmonização facial",
+        "source_label": "Imagem ilustrativa",
+        "asset_path": "assets/tratamento-harmonizacao.webp"
+      }
+    ]
+  },
+  "routes": [
+    "/",
+    "/especialidades/cirurgia-dentaria.html",
+    "/especialidades/clareamento-dentario.html",
+    "/especialidades/harmonizacao-facial.html",
+    "/especialidades/implante-dentario.html",
+    "/especialidades/invisalign.html",
+    "/especialidades/protese-dentaria.html"
+  ]
+}

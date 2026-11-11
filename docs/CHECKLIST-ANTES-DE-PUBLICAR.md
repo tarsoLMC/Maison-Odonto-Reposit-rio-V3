@@ -1,27 +1,18 @@
-# Conferências da Maison
+# Estado da Maison V5
 
-## Implementado na V4
+## Implementado
 
-- Doze páginas completas e navegação por especialidade.
-- Marca oficial recuperada do site da clínica.
-- Fotografias locais e otimizadas, fontes locais com licenças.
-- WhatsApp direto e mensagens por assunto, Instagram e rotas no Google Maps.
-- Menu móvel e perguntas frequentes que funcionam sem JavaScript.
-- Introdução curta com saída por CSS, link nativo e sem bloqueio de rolagem.
-- Títulos, descrições, canonical, Open Graph e dados estruturados individuais.
-- Indexação desativada no endereço temporário de testes.
+- 13 páginas completas, incluindo cirurgia dentária e os outros seis tratamentos.
+- Cinco planos com logotipos: Life Empresarial Saúde, MetLife, INPAO Dental, Rede Odonto Empresas e Amil.
+- História, missão, visão, cinco valores, 12 resumos de avaliações públicas e galeria com dez imagens.
+- Informações e imagens da referência Vercel autorizada pelo usuário; fotografias ilustrativas identificadas.
+- Telefone (61) 99599-1116, WhatsApp (61) 99143-4312, horário 8h–12h e 13h–18h, de segunda a sexta.
+- JLMR Odontologia Especializada Ltda., CNPJ 44.584.328/0001-78, conforme referência.
+- Menu móvel nativo, saída da introdução por CSS, contato sem formulário, links de mapa e Instagram.
+- Carrosséis, galeria ampliável, movimento reduzido, fontes e imagens locais.
 
-## Dados que a clínica ainda precisa validar para o domínio definitivo
+## Domínio definitivo
 
-- Identificação da pessoa jurídica e registros profissionais CRO da clínica e do responsável técnico.
-- Nomes, fotografias e registros da equipe, caso seja adicionada uma seção de profissionais.
-- Horários. A arte fornecida informa segunda a sexta, 09h–18h30; havia divergência com outras fontes na auditoria anterior.
-- Lista atual e cobertura de convênios. O site encaminha a confirmação à equipe e não apresenta logos de planos não confirmados.
-- Direitos e autorizações de uso das fotografias já publicadas pela clínica.
-- Revisão clínica das explicações de cada tratamento.
+Esta publicação atualiza o endereço temporário já conectado à branch main. Preserva noindex e não altera DNS ou o site do domínio definitivo. Identificação profissional e CRO não estão na referência e não foram inventados. Uma futura seção de equipe depende de seus dados reais.
 
-A V4 não inventa depoimentos, notas de avaliações, casos de antes e depois, prazos, preços ou resultados garantidos.
-
-## Publicação definitiva
-
-Confirmar destino, preservar o site anterior, atualizar URLs e liberar indexação somente quando a versão final estiver aprovada. Validar no Safari de um iPhone e em Android reais, além da verificação de larguras no navegador de teste.
+A validação atual usa Chromium em larguras de 320 a 1440 pixels. Isso não equivale a teste em aparelhos físicos ou Safari. A migração definitiva deve atualizar URLs e indexação de acordo com o destino escolhido.
