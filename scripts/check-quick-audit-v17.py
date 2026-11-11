@@ -35,6 +35,7 @@ for file,name in names.items():
  assert len(image.images)==1,(file,'hero image count')
  assert image.images[0]['alt']=='Imagem ilustrativa relacionada a '+name.lower(),(file,'generic alt')
  assert image.images[0].get('loading')=='eager' and image.images[0].get('fetchpriority')=='high'
+ assert '<span class="page-photo-label">Imagem ilustrativa</span>' in hero,(file,'visible photo label changed')
  assert 'noindex,nofollow' in html,(file,'staging SEO changed')
 # Non-treatment pages must retain their general appointment link.
 home=(ROOT/'index.html').read_text(encoding='utf-8')
