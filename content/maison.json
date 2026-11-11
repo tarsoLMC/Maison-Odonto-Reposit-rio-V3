@@ -115,6 +115,21 @@
           "question": "Como é definida a anestesia?",
           "answer": "O profissional considera a complexidade do procedimento e as necessidades do paciente."
         }
+      ],
+      "summary": "Procedimentos como extrações, com avaliação, planejamento e orientações para a recuperação.",
+      "journey": [
+        {
+          "title": "Investigar o caso",
+          "text": "A avaliação identifica a necessidade do procedimento e os exames pertinentes."
+        },
+        {
+          "title": "Definir a abordagem",
+          "text": "Técnica, anestesia e preparo são explicados conforme a complexidade."
+        },
+        {
+          "title": "Acompanhar a recuperação",
+          "text": "A equipe orienta alimentação, higiene e retorno após a intervenção."
+        }
       ]
     },
     {
@@ -136,6 +151,10 @@
           "text": "Antes de iniciar, o dentista avalia se o clareamento é indicado. O efeito pode mudar com o tempo, e a necessidade de retoques deve ser discutida em consulta."
         },
         {
+          "heading": "O que o clareamento não muda",
+          "text": "Coroas, lentes e restaurações não clareiam como os dentes naturais. Também pode ocorrer sensibilidade, por isso a avaliação e o acompanhamento ajudam a escolher o tratamento e orientar seu uso."
+        },
+        {
           "heading": "Perguntas frequentes",
           "text": "O clareamento caseiro pode ser supervisionado? Sim. O dentista prepara a moldeira e orienta a aplicação do gel e o período de uso. O resultado é permanente? A tonalidade pode mudar ao longo do tempo. O dentista pode avaliar se há indicação de retoque."
         },
@@ -153,6 +172,21 @@
         {
           "question": "O resultado é permanente?",
           "answer": "A tonalidade pode mudar ao longo do tempo. O dentista pode avaliar se há indicação de retoque."
+        }
+      ],
+      "summary": "Tratamento para clarear dentes naturais, no consultório ou em casa com supervisão profissional.",
+      "journey": [
+        {
+          "title": "Avaliar a cor",
+          "text": "O dentista examina a saúde bucal e identifica a origem da alteração de tonalidade."
+        },
+        {
+          "title": "Escolher a modalidade",
+          "text": "Consultório ou moldeiras supervisionadas: a indicação considera o caso e a rotina."
+        },
+        {
+          "title": "Monitorar a resposta",
+          "text": "O acompanhamento orienta sensibilidade, evolução da cor e eventual manutenção."
         }
       ]
     },
@@ -175,6 +209,10 @@
           "text": "Converse com um profissional qualificado sobre as opções e o resultado que é possível esperar para o seu caso antes de decidir."
         },
         {
+          "heading": "Decidir com informação",
+          "text": "Converse sobre o resultado possível, os riscos, a recuperação e a necessidade de manutenção. A escolha deve considerar suas expectativas e a avaliação de um profissional qualificado."
+        },
+        {
           "heading": "Perguntas frequentes",
           "text": "O tratamento segue o mesmo plano para todos? Cada plano considera a anatomia e os objetivos individuais. A avaliação define as técnicas indicadas."
         },
@@ -188,6 +226,21 @@
         {
           "question": "O tratamento segue o mesmo plano para todos?",
           "answer": "Cada plano considera a anatomia e os objetivos individuais. A avaliação define as técnicas indicadas."
+        }
+      ],
+      "summary": "Planejamento estético das proporções do rosto, com técnicas escolhidas para os seus objetivos.",
+      "journey": [
+        {
+          "title": "Ouvir seus objetivos",
+          "text": "A conversa considera o que você deseja mudar e as características do seu rosto."
+        },
+        {
+          "title": "Conhecer as opções",
+          "text": "O profissional explica a finalidade, os limites e os cuidados de cada técnica indicada."
+        },
+        {
+          "title": "Planejar o acompanhamento",
+          "text": "O plano inclui orientações após o procedimento e avaliação da evolução."
         }
       ]
     },
@@ -228,6 +281,21 @@
           "question": "Implante e prótese são a mesma coisa?",
           "answer": "O implante funciona como suporte no osso. A prótese é a parte que repõe o dente na boca."
         }
+      ],
+      "summary": "Repõe a raiz de um dente perdido e sustenta a prótese que devolve forma e função ao sorriso.",
+      "journey": [
+        {
+          "title": "Avaliar a base",
+          "text": "Exame da boca e análise do osso e da gengiva orientam a indicação."
+        },
+        {
+          "title": "Planejar a reposição",
+          "text": "O profissional define a instalação do implante e as etapas de cicatrização."
+        },
+        {
+          "title": "Adaptar e acompanhar",
+          "text": "A prótese é ajustada ao planejamento, com retornos e cuidados de higiene."
+        }
       ]
     },
     {
@@ -266,6 +334,21 @@
         {
           "question": "Serve para todos os casos?",
           "answer": "A escolha depende do tipo e da complexidade da correção. A avaliação define a abordagem adequada."
+        }
+      ],
+      "summary": "Alinhadores transparentes e removíveis que movimentam os dentes com acompanhamento ortodôntico.",
+      "journey": [
+        {
+          "title": "Avaliar o alinhamento",
+          "text": "O ortodontista analisa a posição dos dentes e a mordida."
+        },
+        {
+          "title": "Seguir a sequência",
+          "text": "Alinhadores personalizados são trocados conforme a orientação profissional."
+        },
+        {
+          "title": "Acompanhar a evolução",
+          "text": "As consultas verificam os movimentos e orientam a etapa de contenção."
         }
       ]
     },
@@ -306,16 +389,59 @@
           "question": "Como saber qual prótese é adequada?",
           "answer": "O dentista considera a localização dos dentes ausentes ou danificados e a condição geral da boca."
         }
+      ],
+      "summary": "Soluções fixas ou removíveis para repor dentes e ajudar na mastigação, na fala e na estética.",
+      "journey": [
+        {
+          "title": "Entender a necessidade",
+          "text": "A avaliação considera os dentes ausentes, os dentes de apoio e a mordida."
+        },
+        {
+          "title": "Escolher a solução",
+          "text": "Tipo, material e formato da prótese são definidos de acordo com o caso."
+        },
+        {
+          "title": "Ajustar à sua rotina",
+          "text": "Adaptação, limpeza e revisões fazem parte do cuidado com a prótese."
+        }
       ]
     },
     {
       "name": "Lentes de contato dentais",
       "route": null,
       "url": null,
-      "intro": "Planejamento estético para avaliar mudanças na forma, na cor e nas proporções dos dentes.",
-      "sections": [],
+      "intro": "Lentes de contato dentais são lâminas finas aplicadas à parte da frente dos dentes. O planejamento estético avalia cor, formato e proporções, preservando as características do seu sorriso.",
+      "sections": [
+        {
+          "heading": "O que pode ser trabalhado",
+          "text": "O tratamento pode ser considerado para alterações de formato, proporção e cor. Antes da indicação, o dentista avalia a saúde dos dentes e das gengivas, a mordida e as suas expectativas."
+        },
+        {
+          "heading": "Planejamento antes da transformação",
+          "text": "A avaliação define se lentes são adequadas ou se outras alternativas fazem mais sentido. O preparo dental varia conforme o caso; quando envolve remoção de esmalte, essa alteração é irreversível."
+        },
+        {
+          "heading": "Cuidados que continuam depois",
+          "text": "As lâminas precisam de higiene e acompanhamento. Elas podem sofrer desgaste, fratura ou descolamento e precisar de reparo ou substituição ao longo do tempo."
+        }
+      ],
       "image": "https://maison-odontologia-brasilia.vercel.app/assets/tratamento-lentes.webp",
-      "cta": "https://wa.me/5561991434312?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Lentes%20de%20contato%20dentais."
+      "cta": "https://wa.me/5561991434312?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Lentes%20de%20contato%20dentais.",
+      "summary": "Lâminas finas sobre a frente dos dentes para planejar mudanças de cor, forma e proporção.",
+      "journey": [
+        {
+          "title": "Conversar sobre o sorriso",
+          "text": "Você apresenta seus objetivos; o dentista avalia dentes, gengivas e mordida."
+        },
+        {
+          "title": "Planejar as proporções",
+          "text": "Cor e formato são escolhidos individualmente, considerando alternativas e preparo dental."
+        },
+        {
+          "title": "Cuidar do resultado",
+          "text": "Após a instalação, higiene, revisão da mordida e consultas de manutenção continuam importantes."
+        }
+      ]
     }
   ],
   "business_differentiators": [
