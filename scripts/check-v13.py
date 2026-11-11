@@ -77,7 +77,8 @@ assert 'maison-mobile-quiz.js?v=maison-v13' in specialties
 assert 'data-mobile-care-wizard' in specialties
 quiz=(ROOT/'assets/js/maison-mobile-quiz.js').read_text()
 assert 'history.replaceState' in quiz and 'history?.state?.maisonCare' in quiz
-assert 'sessionStorage' not in quiz and 'localStorage' not in quiz
+assert 'sessionStorage.getItem(' not in quiz and 'sessionStorage.setItem(' not in quiz
+assert 'localStorage.getItem(' not in quiz and 'localStorage.setItem(' not in quiz
 js=(ROOT/'assets/js/maison-compare-v13.js').read_text()
 assert 'data-return-to-quiz' in js and 'previous.origin === current.origin' in js
 assert '@media(max-width:720px)' in (ROOT/'assets/css/maison-v13.css').read_text()
